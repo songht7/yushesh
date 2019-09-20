@@ -54,7 +54,8 @@
 .__project_box.__project_box--single{width:100%;height:auto;min-height:inherit;}
 .__project_box.__project_box--single > img{width:100%;}
 
-.main_inner_box .__project_box{margin-top:1.041vw;}
+/*.main_inner_box .__project_box{margin-top:1.041vw;}*/
+.main_inner_box .__project_box{margin-top:2.5vw;}
 
 
 /* 字体适配 */
@@ -507,6 +508,7 @@
     .__project_box.__project_box--single > img{width:100%;}
 
     .main_inner_box .__project_box{margin-top:.146rem;}
+    .main_inner_box .__project_box{margin-bottom:.5rem;}
     .main_inner_box .__project_box.scroll_header{margin-top:.06rem;}
 
     /*.__project_box .__img_box::after{display:none;}*/
