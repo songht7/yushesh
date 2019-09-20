@@ -3,7 +3,7 @@
 .grid-item { width: 200px; padding-bottom: 15px}
 .grid-item--width2 { width: 50%; }
 .grid-item img{width: 95%;margin: 0 auto;display: block;}
-
+.grid-mobile .grid-item--width2,.grid-mobile .grid-item img{width: 100%}
 .page_index_div {
     margin-top: 70px;
 }
