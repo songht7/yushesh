@@ -19,7 +19,7 @@
     <!-- Mobile Devices Support @end -->
     <meta name="screen-orientation" content="portrait">
     <meta name="x5-orientation" content="portrait">
-    <title>御舍</title>
+    <title>联系我们 - 御舍</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="shortcut icon" href="fav.ico">
@@ -30,35 +30,28 @@
     <!-- <script type="text/javascript" src="http://www.hkdomani.com/public/wap/js/rem.js"></script> -->
     <script type="text/javascript" src="./content/script/index.js"></script>
     <script type="text/javascript" src="./content/script/jquery-1.9.1.min.js"></script>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script type="text/babel" src="./content/script/nav.js"></script>
 </head>
 
 <body>
     <div id="new_header_container" class="page_detail pc_block">
         <div class="nmbHover">
-            <div class="top_logo" onclick="javascript:window.location.href='http://www.yushesh.com/'">
-                <img src="./content/images/logo.svg" alt="">
-            </div>
-            <ul class="sub_nav">
-                <li><a href="introduction.html">introduction | <span>简介</span></a></li>
-                <li><a href="job.html">jobs | <span>招聘</span></a></li>
-                <li><a href="contact.hmtl">contact us | <span>联系</span></a></li>
-            </ul>
+            <div id="Logo"></div>
+            <div class="pcNav"></div>
         </div>
     </div>
     <div id="new_header_containerex" class="page_detail pc_block">
         <div class="nmbHover">
-            <div class="top_logo" onclick="javascript:window.location.href='http://www.yushesh.com'"></div>
-            <ul class="sub_nav">
-                <li><a href="introduction.html">introduction | <span>简介</span></a></li>
-                <li><a href="job.html">jobs | <span>招聘</span></a></li>
-                <li><a href="contact.hmtl">contact us | <span>联系</span></a></li>
-            </ul>
+            <div id="TopLogo"></div>
+            <div class="pcNav"></div>
         </div>
     </div>
     <div id="mobile_header_container" class="mobile_block">
-        <div class="mobile_top_logo" onclick="javascript:window.location.href='http://www.yushesh.com'">
-            <img src="./content/images/logo.svg" alt="">
-        </div>
+        <div id="MobileLogo"></div>
         <div id="sub_nav_bts">
             <i></i>
             <i></i>
@@ -67,15 +60,7 @@
         <div id="mobile_sub_nav_page">
             <div class="sub_nav_list" id="sub_nav_list">
                 <div class="mobile_top_logo"></div>
-                <ul>
-                    <li class="tri_delay_1"><a href="introduction.html">Introduction</a></li>
-                    <li class="tri_delay_2"><a href="award.html">AWARDS</a></li>
-                    <li class="tri_delay_3"><a href="news.html">NEWS</a></li>
-                    <li class="tri_delay_3"><a href="team.html">TEAM</a></li>
-                    <!--            <li class="tri_delay_3"><a href="">2008-2015 PROJECTS</a></li>-->
-                    <li class="tri_delay_4"><a href="contact.html">Contact Us</a></li>
-                    <li class="tri_delay_5"><a href="join.html">JOIN US</a></li>
-                </ul>
+                <div id="MobileNav"></div>
             </div>
             <div class="sub_nav_bg" id="sub_nav_bg"></div>
         </div>
@@ -187,12 +172,9 @@
             <div class="m_contact_bottom_img"></div>
         </div>
     </div>
-    <div id="new_footer_container" class="pc_block" style="margin-top:70px;">
-        <p>版权所有 ©御舍 沪ICP备19029924号-1</p>
-    </div>
-    <div id="mobile_footer_container" class="mobile_block border-top-1px" style="margin-top:.66rem">
-        <p>版权所有 ©御舍 沪ICP备19029924号-1</p>
-    </div>
+    
+    <div id="Footer"></div>
+    
     <script type="text/javascript" src="./content/script/aniview.js"></script>
     <script type="text/javascript" src="./content/script/fastclick.js"></script>
     <script type="text/javascript" src="./content/script/jquery.mousewheel.min.js"></script>

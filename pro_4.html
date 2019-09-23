@@ -19,7 +19,7 @@
     <!-- Mobile Devices Support @end -->
     <meta name="screen-orientation" content="portrait">
     <meta name="x5-orientation" content="portrait">
-    <title>御舍</title>
+    <title>妙乐寺 - 御舍</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="shortcut icon" href="fav.ico">
@@ -31,35 +31,27 @@
     <script type="text/javascript" src="./content/script/index.js"></script>
     <script type="text/javascript" src="./content/script/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="./content/script/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script type="text/babel" src="./content/script/nav.js"></script>
 </head>
 
 <body>
     <div id="new_header_container" class="page_detail pc_block">
         <div class="nmbHover">
-            <div class="top_logo" onclick="javascript:window.location.href='http://www.yushesh.com/'">
-                <img src="./content/images/logo.svg" alt="">
-            </div>
-            <ul class="sub_nav">
-                <li><a href="introduction.html">introduction | <span>简介</span></a></li>
-                <li><a href="job.html">jobs | <span>招聘</span></a></li>
-                <li><a href="contact.html">contact us | <span>联系</span></a></li>
-            </ul>
+            <div id="Logo"></div>
+            <div class="pcNav"></div>
         </div>
     </div>
     <div id="new_header_containerex" class="page_detail pc_block">
         <div class="nmbHover">
-            <div class="top_logo" onclick="javascript:window.location.href='http://www.yushesh.com'"></div>
-            <ul class="sub_nav">
-                <li><a href="introduction.html">introduction | <span>简介</span></a></li>
-                <li><a href="job.html">jobs | <span>招聘</span></a></li>
-                <li><a href="contact.hmtl">contact us | <span>联系</span></a></li>
-            </ul>
+            <div id="TopLogo"></div>
+            <div class="pcNav"></div>
         </div>
     </div>
     <div id="mobile_header_container" class="mobile_block">
-        <div class="mobile_top_logo" onclick="javascript:window.location.href='http://www.yushesh.com'">
-            <img src="./content/images/logo.svg" alt="">
-        </div>
+        <div id="MobileLogo"></div>
         <div id="sub_nav_bts">
             <i></i>
             <i></i>
@@ -68,15 +60,7 @@
         <div id="mobile_sub_nav_page">
             <div class="sub_nav_list" id="sub_nav_list">
                 <div class="mobile_top_logo"></div>
-                <ul>
-                    <li class="tri_delay_1"><a href="introduction.html">Introduction</a></li>
-                    <li class="tri_delay_2"><a href="award.html">AWARDS</a></li>
-                    <li class="tri_delay_3"><a href="news.html">NEWS</a></li>
-                    <li class="tri_delay_3"><a href="team.html">TEAM</a></li>
-                    <!--            <li class="tri_delay_3"><a href="">2008-2015 PROJECTS</a></li>-->
-                    <li class="tri_delay_4"><a href="contact.html">Contact Us</a></li>
-                    <li class="tri_delay_5"><a href="job.html">JOIN US</a></li>
-                </ul>
+                <div id="MobileNav"></div>
             </div>
             <div class="sub_nav_bg" id="sub_nav_bg"></div>
         </div>
@@ -115,11 +99,11 @@
     </div>
     <div id="detail_main_container" class="pc_block">
         <div class="detail_inner_container" id="pc_detail_container">
-				    <p><span style="color: rgb(48, 48, 48);">设计概念</p>
-				<p>静谧之林，艺术长河<br>
-一层为莲花安养纪念馆，象征着西方极乐世界。故名谓之静谧之林，营造安静祥和与自然自由相处的情景，通过干景、菩提叶、波浪来体现自然灵动的存在，通过廊桥来表现此岸与彼岸的因果关系，刻画虚实共生的意境<br>
-二层功能定义为妙乐法师个人文学艺术博物馆，故名谓之艺术长河，寓意妙乐法师在文艺方面造诣深远，与及体现妙乐法师无私的奉献精神对众生影响的持续性。所以通过不同的艺术形式、结合图片、文字、图像以美术馆的形式呈现妙乐法师的文学和艺术结晶，通过阵列转折，小景的形式描述妙乐法师修行的刻苦和对慈善的贡献。</p>
-						<p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
+            <p><span style="color: rgb(48, 48, 48);">设计概念</p>
+            <p>静谧之林，艺术长河<br>
+                一层为莲花安养纪念馆，象征着西方极乐世界。故名谓之静谧之林，营造安静祥和与自然自由相处的情景，通过干景、菩提叶、波浪来体现自然灵动的存在，通过廊桥来表现此岸与彼岸的因果关系，刻画虚实共生的意境<br>
+                二层功能定义为妙乐法师个人文学艺术博物馆，故名谓之艺术长河，寓意妙乐法师在文艺方面造诣深远，与及体现妙乐法师无私的奉献精神对众生影响的持续性。所以通过不同的艺术形式、结合图片、文字、图像以美术馆的形式呈现妙乐法师的文学和艺术结晶，通过阵列转折，小景的形式描述妙乐法师修行的刻苦和对慈善的贡献。</p>
+            <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
             <div class="grid">
                 <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/1.png" style="" title="" /></div>
                 <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/2.png" style="" title="" /></div>
@@ -147,25 +131,25 @@
             </div>
             <div class="moble_project_detail" id="mobile_detail_container">
                 <div class="detail_inner_container" id="pc_detail_container">
-				    <p><span style="color: rgb(48, 48, 48);">设计概念</p>
-				<p>静谧之林，艺术长河<br>
-一层为莲花安养纪念馆，象征着西方极乐世界。故名谓之静谧之林，营造安静祥和与自然自由相处的情景，通过干景、菩提叶、波浪来体现自然灵动的存在，通过廊桥来表现此岸与彼岸的因果关系，刻画虚实共生的意境<br>
-二层功能定义为妙乐法师个人文学艺术博物馆，故名谓之艺术长河，寓意妙乐法师在文艺方面造诣深远，与及体现妙乐法师无私的奉献精神对众生影响的持续性。所以通过不同的艺术形式、结合图片、文字、图像以美术馆的形式呈现妙乐法师的文学和艺术结晶，通过阵列转折，小景的形式描述妙乐法师修行的刻苦和对慈善的贡献。</p>
-						<p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
+                    <p><span style="color: rgb(48, 48, 48);">设计概念</p>
+                    <p>静谧之林，艺术长河<br>
+                        一层为莲花安养纪念馆，象征着西方极乐世界。故名谓之静谧之林，营造安静祥和与自然自由相处的情景，通过干景、菩提叶、波浪来体现自然灵动的存在，通过廊桥来表现此岸与彼岸的因果关系，刻画虚实共生的意境<br>
+                        二层功能定义为妙乐法师个人文学艺术博物馆，故名谓之艺术长河，寓意妙乐法师在文艺方面造诣深远，与及体现妙乐法师无私的奉献精神对众生影响的持续性。所以通过不同的艺术形式、结合图片、文字、图像以美术馆的形式呈现妙乐法师的文学和艺术结晶，通过阵列转折，小景的形式描述妙乐法师修行的刻苦和对慈善的贡献。</p>
+                    <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
                     <div class="grid-mobile">
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/1.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/2.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/3.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/4.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/5.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/6.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/7.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/8.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/9.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/10.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/11.png" style="" title="" /></div>
-				                <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/12.png" style="" title="" /></div>
-				             </div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/1.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/2.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/3.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/4.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/5.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/6.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/7.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/8.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/9.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/10.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/11.png" style="" title="" /></div>
+                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img src="./content/product/pro_3/12.png" style="" title="" /></div>
+                    </div>
                 </div>
             </div>
             <div class="mobile_share_container">
@@ -174,12 +158,7 @@
             </div>
         </div>
     </div>
-    <div id="new_footer_container" class="pc_block" style="margin-top:70px;">
-        <p>版权所有 ©御舍 沪ICP备19029924号-1</p>
-    </div>
-    <div id="mobile_footer_container" class="mobile_block border-top-1px" style="margin-top:.93rem">
-        <p>版权所有 ©御舍 沪ICP备19029924号-1</p>
-    </div>
+    <div id="Footer"></div>
     <script>
     $(function() {
         $('.grid').masonry({
