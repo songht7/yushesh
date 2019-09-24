@@ -52,6 +52,17 @@ class PCNav extends React.Component {
     }
 }
 
+class MobileShare extends React.Component {
+    render() {
+        return (
+            <div className="mobile_share_container">
+                {/* <div className="share_grid weibo"></div>*/}
+                <div className="share_grid wechat" style={{marginLeft: 0}}></div>
+            </div>
+        );
+    }
+}
+
 class Footer extends React.Component {
     render() {
         return (
@@ -81,14 +92,21 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
+    <PCNav />,
+    document.querySelector(".pcNav")
+);
+ReactDOM.render(
     <MobileNav />,
     document.querySelector("#MobileNav")
 );
+
+if (document.querySelector("#MobileShare")) {
+    ReactDOM.render(
+        <MobileShare />,
+        document.querySelector("#MobileShare")
+    );
+}
 ReactDOM.render(
     <Footer />,
     document.querySelector("#Footer")
-);
-ReactDOM.render(
-    <PCNav />,
-    document.querySelector(".pcNav")
 );
