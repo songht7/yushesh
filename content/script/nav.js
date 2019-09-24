@@ -69,26 +69,26 @@ class Footer extends React.Component {
 
 ReactDOM.render(
     <Logo />,
-    document.getElementById('Logo')
+    document.querySelector("#Logo")
 );
 ReactDOM.render(
     <TopLogo />,
-    document.getElementById('TopLogo')
+    document.querySelector("#TopLogo")
 );
 ReactDOM.render(
     <MobileLogo />,
-    document.getElementById('MobileLogo')
+    document.querySelector("#MobileLogo")
 );
 
 ReactDOM.render(
     <MobileNav />,
-    document.getElementById('MobileNav')
+    document.querySelector("#MobileNav")
+);
+ReactDOM.render(
+    <Footer />,
+    document.querySelector("#Footer")
 );
 ReactDOM.render(
     <PCNav />,
     document.querySelector(".pcNav")
-);
-ReactDOM.render(
-    <Footer />,
-    document.getElementById('Footer')
 );
