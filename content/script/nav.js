@@ -30,9 +30,9 @@ class MobileNav extends React.Component {
         return (
             <ul>
                 <li className="tri_delay_1"><a href="introduction.html">Introduction</a></li>
-                <li className="tri_delay_2"><a href="award.html">AWARDS</a></li>
+                {/* <li className="tri_delay_2"><a href="award.html">AWARDS</a></li>
                 <li className="tri_delay_3"><a href="news.html">NEWS</a></li>
-                <li className="tri_delay_3"><a href="team.html">TEAM</a></li>
+                <li className="tri_delay_3"><a href="team.html">TEAM</a></li>*/}
                 <li className="tri_delay_4"><a href="contact.html">Contact Us</a></li>
                 <li className="tri_delay_5"><a href="job.html">JOIN US</a></li>
             </ul>
