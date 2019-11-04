@@ -360,13 +360,15 @@
     <script src="./content/script/jquery-hover3d.min.js"></script> -->
     <script>
     loadScript('./content/script/jquery-1.9.1.min.js', function() {
-        loadScript('./content/script/aniview.js', function() {
-            loadScript('./content/script/fastclick.js', function() {
-                loadScript('./content/script/jquery.mousewheel.min.js', function() {
-                    loadScript('./content/script/jquery.waypoints.min.js', function() {
-                        loadScript('./content/script/common.js', function() 
-                            loadScript('./content/script/jquery-hover3d.min.js', function() {
-                                console.log("script loaded");
+        loadScript('./content/script/index.js', function() {
+            loadScript('./content/script/aniview.js', function() {
+                loadScript('./content/script/fastclick.js', function() {
+                    loadScript('./content/script/jquery.mousewheel.min.js', function() {
+                        loadScript('./content/script/jquery.waypoints.min.js', function() {
+                            loadScript('./content/script/common.js', function() {
+                                loadScript('./content/script/jquery-hover3d.min.js', function() {
+                                    console.log("script loaded");
+                                });
                             });
                         });
                     });
