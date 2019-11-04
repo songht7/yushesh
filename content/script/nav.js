@@ -29,12 +29,12 @@ class MobileNav extends React.Component {
     render() {
         return (
             <ul>
-                <li className="tri_delay_1"><a href="introduction.html">Introduction</a></li>
+                <li className="tri_delay_2"><a href="introduction.html">介绍</a></li>
                 {/* <li className="tri_delay_2"><a href="award.html">AWARDS</a></li>
                 <li className="tri_delay_3"><a href="news.html">NEWS</a></li>
                 <li className="tri_delay_3"><a href="team.html">TEAM</a></li>*/}
-                <li className="tri_delay_4"><a href="contact.html">Contact Us</a></li>
-                <li className="tri_delay_5"><a href="job.html">JOIN US</a></li>
+                <li className="tri_delay_3"><a href="contact.html">Contact Us</a></li>
+                <li className="tri_delay_4"><a href="job.html">JOIN US</a></li>
             </ul>
         );
     }
@@ -44,7 +44,8 @@ class PCNav extends React.Component {
     render() {
         return (
             <ul className="sub_nav">
-                <li><a href="introduction.html">introduction | <span>简介</span></a></li>
+                <li><a href="index.html">introduction | <span>项目</span></a></li>
+                {/*<li><a href="introduction.html">introduction | <span>简介</span></a></li>*/}
                 <li><a href="job.html">jobs | <span>招聘</span></a></li>
                 <li><a href="contact.html">contact us | <span>联系</span></a></li>
             </ul>
