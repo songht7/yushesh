@@ -88,10 +88,12 @@ class Footer extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <Logo />,
-    document.querySelector("#Logo")
-);
+if (document.querySelector("#Logo")) {
+    ReactDOM.render(
+        <Logo />,
+        document.querySelector("#Logo")
+    );
+}
 ReactDOM.render(
     <TopLogo />,
     document.querySelector("#TopLogo")
