@@ -3,7 +3,7 @@ class Logo extends React.Component {
     render() {
         return (
             <div className="top_logo" onClick={()=>window.location.href='index.html'}>
-                <img src="./content/images/logo.svg" alt=""/>
+                <img src="./content/images/logo.png" alt=""/>
             </div>
         );
     }
@@ -19,7 +19,7 @@ class MobileLogo extends React.Component {
     render() {
         return (
             <div className="mobile_top_logo" onClick={()=>window.location.href='index.html'}>
-            <img src="./content/images/logo.svg" alt="" />
+            <img src="./content/images/logo.png" alt="" />
         </div>
         );
     }
@@ -44,10 +44,19 @@ class PCNav extends React.Component {
     render() {
         return (
             <ul className="sub_nav">
-                <li><a href="index.html">introduction | <span>项目</span></a></li>
-                {/*<li><a href="introduction.html">introduction | <span>简介</span></a></li>*/}
-                <li><a href="job.html">jobs | <span>招聘</span></a></li>
-                <li><a href="contact.html">contact us | <span>联系</span></a></li>
+                <li>
+                    <a href="index.html"><span>作品</span></a>
+                    <ul className="nav_sub">
+                        <li><a href="index.html?ctg=1"><span>私宅、样板房、别墅</span></a></li>
+                        <li><a href="index.html?ctg=2"><span>会所、售楼处</span></a></li>
+                        <li><a href="index.html?ctg=3"><span>酒店</span></a></li>
+                        <li><a href="index.html?ctg=4"><span>办公</span></a></li>
+                        <li><a href="index.html?ctg=5"><span>商业空间</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="introduction.html"><span>简介</span></a></li>
+                <li><a href="job.html"><span>招聘</span></a></li>
+                <li><a href="contact.html"><span>联系</span></a></li>
             </ul>
         );
     }
