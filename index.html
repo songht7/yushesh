@@ -28,6 +28,7 @@
     <!-- <script type="text/javascript" src="./content/script/loadScript.js"></script> -->
     <script type="text/javascript" src="./content/script/jquery-1.9.1.min.js"></script>
     <!-- <script type="text/javascript" src="http://www.hkdomani.com/public/wap/js/rem.js"></script> -->
+    
     <script src="./content/script/react.production.min.js"></script>
     <script src="./content/script/react-dom.production.min.js"></script>
     <script src="./content/script/babel-v7.6.4.min.js"></script>
@@ -78,7 +79,7 @@
                     <div class="case1" @click="winLocation(pro.id)">
                         <template v-for="c,i in pro.cover">
                             <div :class="['scroll_header', '__img_box', '__img_box--'+(i+1), 'size'+c.size, 'top'+c.top, 'left'+c.left, 'grid_reveal','ani_delay_'+(i+1)]" data-av-animation="self_slide_up" data-index="3"><img :src="'./content/product/pro_'+pro.id+'/'+c.url" alt="">
-                                <div class="__img_box__text" v-if="pro.txtPlace==i+1">
+                                <div class="__img_box__text" v-if="pro.txtPlace==i+1" :class="{'__img_box__text--right':pro.textRlign}">
                                     <p>主案设计 | {{pro.design}}</p>
                                     <p>项目名称 | {{pro.title}}</p>
                                     <p>项目地点 | {{pro.location}}</p>

@@ -8,7 +8,8 @@ var proList = [{
     "construction": "御舍（上海）建设工程有限公司",
     "area": "1000㎡",
     "txtPlace": 7,
-    "showType": "type_a", //
+    "textRlign": "right",
+    "showType": "type_a",
     "cover": [{
         "url": "c1.jpg",
         "size": "420x440",
