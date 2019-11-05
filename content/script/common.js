@@ -22,7 +22,7 @@ $body.on('mousewheel',function(event,delta){
     }
 });
 $(function(){
-    $('.grid_reveal').AniView(options);
+    //$('.grid_reveal').AniView(options);
 });
 
 

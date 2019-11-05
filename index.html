@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="./content/css/media.css">
     <!-- <script type="text/javascript" src="./content/script/loadScript.js"></script> -->
     <script type="text/javascript" src="./content/script/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="./content/script/index.js"></script>
     <!-- <script type="text/javascript" src="http://www.hkdomani.com/public/wap/js/rem.js"></script> -->
     <script src="./content/script/react.production.min.js"></script>
     <script src="./content/script/react-dom.production.min.js"></script>
@@ -39,7 +38,7 @@
     <div id="new_header_container" class="page_detail pc_block">
         <div class="nmbHover">
             <div class="top_logo" onClick="window.location.href='index.html'">
-                <img src="./content/images/logo.png" alt=""/>
+                <img src="./content/images/logo.png" alt="" />
             </div>
             <div class="pcNav"></div>
         </div>
@@ -74,6 +73,23 @@
     </div>
     <div id="main_container" class="page_index_div" style="" v-cloak>
         <div class="main_inner_box">
+            <template v-for="pro,k in proList">
+                <div class="__project_box __project_box--type_c">
+                    <div class="case1" @click="winLocation(pro.id)">
+                        <template v-for="c,i in pro.cover">
+                            <div :class="['scroll_header', '__img_box', '__img_box--'+(i+1), 'size'+c.size, 'top'+c.top, 'left'+c.left, 'grid_reveal','ani_delay_'+(i+1)]" data-av-animation="self_slide_up" data-index="3"><img :src="'./content/product/pro_'+pro.id+'/'+c.url" alt="">
+                                <div class="__img_box__text" v-if="pro.txtPlace==i+1">
+                                    <p>主案设计 | {{pro.design}}</p>
+                                    <p>项目名称 | {{pro.title}}</p>
+                                    <p>项目地点 | {{pro.location}}</p>
+                                    <p>施工单位 | {{pro.construction}}</p>
+                                    <p>建筑面积 | {{pro.area}}</p>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
             <div v-if="ctg=='2'||ctg==''" class="__project_box __project_box--type_c">
                 <div class="case1" onclick="javascript:window.location.href='./pro_1.html'">
                     <div class="scroll_header __img_box __img_box--1 size420x440 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up" data-index="3"><img src="./content/product/pro_1/c1.jpg" alt="">
@@ -93,7 +109,7 @@
                     <div class="__img_box __img_box--7 size860x210 top460 left440 grid_reveal ani_delay_7" data-av-animation="self_slide_up"><img src="./content/product/pro_1/c7.jpg" alt=""></div>
                 </div>
             </div>
-            <div v-if="ctg=='2'||ctg==''" class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_2.html'" data-index="1">
+            <!-- <div v-if="ctg=='2'||ctg==''" class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_2.html'" data-index="1">
                 <img src="./content/product/pro_2/c1.jpg" alt="">
                 <div class="__img_box__text __img_box__text--right">
                     <p>主案设计 | 李宏升</p>
@@ -342,7 +358,7 @@
                     <p>施工单位 | 御舍（上海）建设工程有限公司</p>
                     <p>建筑面积 | 3600平方</p>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div id="Footer"></div>
     </div>
@@ -352,14 +368,16 @@
     <div id="mobile_footer_container" class="mobile_block border-top-1px" style="margin-top:.93rem">
         <p>版权所有 ©御舍 沪ICP备19029924号-1</p>
     </div> -->
-    <script type="text/babel" src="./content/script/Vue-v2.6.10.js"></script>
-    <script type="text/babel" src="./content/script/Vue-ctg.js"></script>
     <script type="text/javascript" src="./content/script/aniview.js"></script>
     <script type="text/javascript" src="./content/script/fastclick.js"></script>
     <script type="text/javascript" src="./content/script/jquery.mousewheel.min.js"></script>
     <script style="text/javascript" src="./content/script/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="./content/script/common.js"></script>
-    <script src="./content/script/jquery-hover3d.min.js"></script> 
+    <script src="./content/script/jquery-hover3d.min.js"></script>
+    <script type="text/javascript" src="./content/script/index.js"></script>
+    <script type="text/babel" src="./content/script/Vue-v2.6.10.js"></script>
+    <script type="text/babel" src="./content/script/product.json.js"></script>
+    <script type="text/babel" src="./content/script/Vue-ctg.js"></script>
     <script>
     // loadScript('./content/script/aniview.js', function() {
     //     loadScript('./content/script/fastclick.js', function() {
