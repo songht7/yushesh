@@ -9,15 +9,14 @@ var login = new Vue({
     },
     mounted(e) {
         console.log("mounted:");
-        console.log(this.proList);
-        const _ctg = this.GetUrlParam("ctg");
-        this.ctg = _ctg;
         $('.grid_reveal').AniView(options);
+        const that = this;
+        const _ctg = that.GetUrlParam("ctg");
+        that.ctg = _ctg;
     },
     methods: {
-        filerPro() {},
-        winLocation(id){
-            window.location.href='/pro_'+id+'.html';
+        winLocation(id) {
+            window.location.href = '/pro_' + id + '.html';
         },
         GetUrlParam(paraName) {
             var url = window.location.toString();
