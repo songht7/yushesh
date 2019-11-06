@@ -27,341 +27,35 @@
     <link rel="stylesheet" href="./content/css/media.css">
     <!-- <script type="text/javascript" src="./content/script/loadScript.js"></script> -->
     <script type="text/javascript" src="./content/script/jquery-1.9.1.min.js"></script>
-    <!-- <script type="text/javascript" src="http://www.hkdomani.com/public/wap/js/rem.js"></script> -->
-    
+    <script type="text/javascript" src="./content/script/index.js"></script>
+    <!-- <script type="text/javascript" src="http://www.hkdomani.com/public/wap/js/rem.js"></script> 
+    <script src="./content/script/babel-v7.6.4.min.js"></script>
     <script src="./content/script/react.production.min.js"></script>
     <script src="./content/script/react-dom.production.min.js"></script>
-    <script src="./content/script/babel-v7.6.4.min.js"></script>
-    <script type="text/babel" src="./content/script/nav.js"></script>
+    <script type="text/babel" src="./content/script/nav.js"></script>-->
 </head>
 
 <body>
-    <div id="new_header_container" class="page_detail pc_block">
-        <div class="nmbHover">
-            <div class="top_logo" onClick="window.location.href='index.html'">
-                <img src="./content/images/logo.png" alt="" />
-            </div>
-            <div class="pcNav"></div>
-        </div>
-    </div>
-    <div id="new_header_containerex" class="page_detail pc_block">
-        <div class="nmbHover">
-            <div id="TopLogo"></div>
-            <div class="pcNav"></div>
-        </div>
-    </div>
-    <div id="mobile_header_container" class="mobile_block">
-        <div id="MobileLogo"></div>
-        <div id="sub_nav_bts">
-            <i></i>
-            <i></i>
-            <i></i>
-        </div>
-        <div id="mobile_sub_nav_page">
-            <div class="sub_nav_list" id="sub_nav_list">
-                <div class="mobile_top_logo"></div>
-                <div id="MobileNav"></div>
-            </div>
-            <div class="sub_nav_bg" id="sub_nav_bg"></div>
-        </div>
-    </div>
-    <div id="hide_banner_top" class="mobile_block close">
-        <div class="_nmb">
-            <div class="table_father">
-                <div class="table_child"></div>
-            </div>
-        </div>
-    </div>
-    <div id="main_container" class="page_index_div" style="" v-cloak>
-        <div class="main_inner_box">
-            <template v-for="pro,k in proList">
-                <div v-if="ctg==pro.ctg||ctg==''" class="__project_box __project_box--type_c">
-                    <div class="case1" @click="winLocation(pro.id)">
-                        <template v-for="c,i in pro.cover">
-                            <div :class="['scroll_header', '__img_box', '__img_box--'+(i+1), 'size'+c.size, 'top'+c.top, 'left'+c.left, 'grid_reveal','ani_delay_'+(i+1)]" data-av-animation="self_slide_up" data-index="3"><img :src="'./content/product/pro_'+pro.id+'/'+c.url" alt="">
-                                <div class="__img_box__text" v-if="pro.txtPlace==i+1" :class="{'__img_box__text--right':pro.textRlign}">
-                                    <p>主案设计 | {{pro.design}}</p>
-                                    <p>项目名称 | {{pro.title}}</p>
-                                    <p>项目地点 | {{pro.location}}</p>
-                                    <p>施工单位 | {{pro.construction}}</p>
-                                    <p>建筑面积 | {{pro.area}}</p>
-                                </div>
+    <div id="Wrapper" v-cloak>
+        <top-header></top-header>
+        <div id="main_container" class="page_index_div">
+            <div class="main_inner_box">
+                <div class="__project_box __project_box--type_c">
+                    <div class="case1" onclick="javascript:window.location.href='./pro_1.html'">
+                        <div class="scroll_header __img_box __img_box--1 size420x440 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up" data-index="3"><img src="./content/product/pro_1/c1.jpg" alt="">
+                            <div class="__img_box__text">
+                                <p>主案设计 | 李宏升</p>
+                                <p>项目名称 | 九江观澜盛世</p>
+                                <p>项目地点 | 江西九江</p>
+                                <p>施工单位 | 御舍（上海）建设工程有限公司</p>
+                                <p>建筑面积 | 380平方</p>
                             </div>
-                        </template>
-                    </div>
-                </div>
-            </template>
-            <div v-if="ctg=='2'||ctg==''" class="__project_box __project_box--type_c">
-                <div class="case1" onclick="javascript:window.location.href='./pro_1.html'">
-                    <div class="scroll_header __img_box __img_box--1 size420x440 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up" data-index="3"><img src="./content/product/pro_1/c1.jpg" alt="">
-                        <div class="__img_box__text">
-                            <p>主案设计 | 李宏升</p>
-                            <p>项目名称 | 九江观澜盛世</p>
-                            <p>项目地点 | 江西九江</p>
-                            <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                            <p>建筑面积 | 380平方</p>
-                        </div>
-                    </div>
-                    <div class="__img_box __img_box--2 size420x210 top0 left440 grid_reveal ani_delay_2" data-av-animation="self_slide_up"><img src="./content/product/pro_1/c2.jpg" alt=""></div>
-                    <div class="__img_box __img_box--3 size420x210 top0 left880 grid_reveal ani_delay_3" data-av-animation="self_slide_up"><img src="./content/product/pro_1/c3.jpg" alt=""></div>
-                    <div class="__img_box __img_box--4 size420x210 top230 left440 grid_reveal ani_delay_4" data-av-animation="self_slide_up"><img src="./content/product/pro_1/c4.jpg" alt=""></div>
-                    <div class="__img_box __img_box--5 size420x210 top230 left880 grid_reveal ani_delay_5" data-av-animation="self_slide_up"><img src="./content/product/pro_1/c5.jpg" alt=""></div>
-                    <div class="__img_box __img_box--6 size420x210 top460 left0 grid_reveal ani_delay_6" data-av-animation="self_slide_up"><img src="./content/product/pro_1/c6.jpg" alt=""></div>
-                    <div class="__img_box __img_box--7 size860x210 top460 left440 grid_reveal ani_delay_7" data-av-animation="self_slide_up"><img src="./content/product/pro_1/c7.jpg" alt=""></div>
-                </div>
-            </div>
-            <!-- <div v-if="ctg=='2'||ctg==''" class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_2.html'" data-index="1">
-                <img src="./content/product/pro_2/c1.jpg" alt="">
-                <div class="__img_box__text __img_box__text--right">
-                    <p>主案设计 | 李宏升</p>
-                    <p>项目名称 | 信华酒店</p>
-                    <p>项目地点 | 江西九江</p>
-                    <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                    <p>建筑面积 | 3000平方</p>
-                </div>
-            </div>
-            <div v-if="ctg=='1'||ctg==''" class="__project_box __project_box--type_a">
-                <div class="case1" onclick="javascript:window.location.href='./pro_3.html'">
-                    <div class="scroll_header __img_box __img_box--1 top0 left0 size420x670 grid_reveal ani_delay_1" data-av-animation="self_slide_up" data-index="0">
-                        <img src="./content/product/pro_3/c1.jpg" alt="">
-                    </div>
-                    <div class="__img_box __img_box--2 top0 left440 size420x210 grid_reveal ani_delay_2" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_3/c2.jpg" alt="">
-                    </div>
-                    <div class="__img_box __img_box--3 top0 left880 size420x210 grid_reveal ani_delay_3" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_3/c3.jpg" alt="">
-                    </div>
-                    <div class="__img_box __img_box--4 top230 left440 size860x210 grid_reveal ani_delay_4" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_3/c4.jpg" alt="">
-                    </div>
-                    <div class="__img_box __img_box--5 top460 left440 size420x210 grid_reveal ani_delay_5" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_3/c5.jpg" alt="">
-                    </div>
-                    <div class="__img_box __img_box--6 top460 left880 size420x210 grid_reveal ani_delay_6" data-av-animation="self_slide_up"><img src="./content/product/pro_3/c6.jpg" alt=""></div>
-                    <div class="__img_box __img_box--7 top690 left0 size860x210 grid_reveal ani_delay_7" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_3/c7.jpg" alt="">
-                        <div class="__img_box__text">
-                            <p>主案设计 | 李宏升</p>
-                            <p>项目名称 | 九江映日荷花. 戴小姐 . 私人订制豪宅</p>
-                            <p>项目地点 | 江西九江</p>
-                            <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                            <p>建筑面积 | 600 ㎡</p>
-                        </div>
-                    </div>
-                    <div class="__img_box __img_box--8 top690 left880 size420x210 grid_reveal ani_delay_8" data-av-animation="self_slide_up"><img src="./content/product/pro_3/c8.jpg" alt=""></div>
-                </div>
-            </div>
-            <div v-if="ctg=='1'||ctg==''" class="__project_box __project_box--type_b">
-                <div class="case1" onclick="javascript:window.location.href='./pro_4.html'">
-                    <div class="scroll_header __img_box __img_box--1 size420x210 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up" data-index="2">
-                        <img src="./content/product/pro_4/c1.jpg" alt="">
-                    </div>
-                    <div class="scroll_header __img_box __img_box--2 size420x210 top0 left440 grid_reveal ani_delay_2" data-av-animation="self_slide_up" data-index="2">
-                        <img src="./content/product/pro_4/c2.jpg" alt="">
-                    </div>
-                    <div class="__img_box __img_box--3 size420x670 top0 left880 grid_reveal ani_delay_3" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_4/c3.jpg" alt="">
-                    </div>
-                    <div class="__img_box __img_box--4 size420x440 top230 left0 grid_reveal ani_delay_4" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_4/c4.jpg" alt="">
-                    </div>
-                    <div class="__img_box __img_box--5 size420x210 top230 left440 grid_reveal ani_delay_5" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_4/c5.jpg" alt="">
-                    </div>
-                    <div class="__img_box __img_box--6 size420x210 top460 left440 grid_reveal ani_delay_6" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_4/c6.jpg" alt="">
-                    </div>
-                    <div class="__img_box __img_box--7 size860x210 top690 left0 grid_reveal ani_delay_7" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_4/c7.jpg" alt="">
-                        <div class="__img_box__text">
-                            <p>主案设计 | 李宏升</p>
-                            <p>项目名称 | 妙乐寺</p>
-                            <p>项目地点 | 湖北省黄梅县小池镇</p>
-                            <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                            <p>建筑面积 | 占地面积约8万平方米</p>
-                        </div>
-                    </div>
-                    <div class="__img_box __img_box--8 top690 left880 size420x210 grid_reveal ani_delay_8" data-av-animation="self_slide_up"><img src="./content/product/pro_4/c8.jpg" alt=""></div>
-                </div>
-            </div>
-            <div v-if="ctg=='2'||ctg==''" class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_5.html'" data-index="1">
-                <img src="./content/product/pro_5/c1.jpg" alt="">
-                <div class="__img_box__text __img_box__text--right">
-                    <p>主案设计 | 李宏升</p>
-                    <p>项目名称 | 信华建国龙吟日料店</p>
-                    <p>项目地点 | 江西九江</p>
-                    <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                    <p>设计理念 | 日式漆器文化</p>
-                </div>
-            </div>
-            <div v-if="ctg=='3'||ctg==''" class="__project_box __project_box--type_b">
-                <div class="case1" onclick="javascript:window.location.href='./pro_6.html'">
-                    <div class="__img_box size860x210 top0 left0 grid_reveal ani_delay_5" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_6/c1.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x210 top0 left880 grid_reveal ani_delay_6" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_6/c2.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x210 top230 left0 grid_reveal ani_delay_7" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_6/c3.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x210 top460 left0 grid_reveal ani_delay_8" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_6/c4.jpg" alt="">
-                    </div>
-                    <div class="__img_box size860x440 top230 left440 grid_reveal ani_delay_9" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_6/c5.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x210 top690 left0 grid_reveal ani_delay_10" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_6/c6.jpg" alt="">
-                    </div>
-                    <div class="__img_box size860x210 top690 left440 grid_reveal ani_delay_11" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_6/c7.jpg" alt="">
-                        <div class="__img_box__text __img_box__text--right">
-                            <p>主案设计 | 李宏升</p>
-                            <p>项目名称 | 溯源，寻味汉韵，茶楼新境</p>
-                            <p>项目地点 | 云南 昆明</p>
-                            <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                            <p>建筑面积 | 600平方</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div v-if="ctg=='2'||ctg==''" class="__project_box __project_box--type_b">
-                <div class="case1" onclick="javascript:window.location.href='./pro_7.html'">
-                    <div class="__img_box size860x210 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_7/c1.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x210 top0 left880 grid_reveal ani_delay_2" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_7/c2.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x440 top230 left0 grid_reveal ani_delay_3" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_7/c3.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x440 top230 left440 grid_reveal ani_delay_5" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_7/c4.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x440 top230 left880 grid_reveal ani_delay_6" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_7/c5.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x210 top690 left0 grid_reveal ani_delay_12" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_7/c6.jpg" alt="">
-                    </div>
-                    <div class="__img_box size860x210 top690 left440 grid_reveal ani_delay_13" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_7/c7.jpg" alt="">
-                        <div class="__img_box__text __img_box__text--right">
-                            <p>主案设计 | 李宏升 赵晟</p>
-                            <p>项目名称 | 上海隆江大酒店</p>
-                            <p>项目地点 | 上海嘉定区江桥镇</p>
-                            <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                            <p>设计理念 | 海派文化</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div v-if="ctg=='3'||ctg==''" class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_8.html'" data-index="1">
-                <img src="./content/product/pro_8/c1.jpg" alt="">
-                <div class="__img_box__text">
-                    <p>主案设计 | 李宏升</p>
-                    <p>项目名称 | 九悦庭雅宅</p>
-                    <p>项目地点 | 江西 九江</p>
-                    <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                    <p>项目面积 | 占地面积约8万平方米</p>
-                </div>
-            </div>
-            <div v-if="ctg=='4'||ctg==''" class="__project_box __project_box--type_b">
-                <div class="case1" onclick="javascript:window.location.href='./pro_9.html'">
-                    <div class="__img_box size420x210 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_9/c1.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x210 top0 left440 grid_reveal ani_delay_2" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_9/c2.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x210 top0 left880 grid_reveal ani_delay_3" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_9/c3.jpg" alt="">
-                    </div>
-                    <div class="__img_box size860x210 top230 left0 grid_reveal ani_delay_5" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_9/c4.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x210 top230 left880 grid_reveal ani_delay_6" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_9/c5.jpg" alt="">
-                    </div>
-                    <div class="__img_box size860x440 top460 left0 grid_reveal ani_delay_12" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_9/c6.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x440 top460 left880 grid_reveal ani_delay_13" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_9/c7.jpg" alt="">
-                        <div class="__img_box__text">
-                            <p>主案设计 | 李宏升</p>
-                            <p>项目名称 | 庐山海派画室</p>
-                            <p>项目地点 | 江西九江</p>
-                            <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div v-if="ctg=='5'||ctg==''" class="__project_box __project_box--type_c">
-                <div class="case1" onclick="javascript:window.location.href='./pro_10.html'">
-                    <div class="__img_box size420x440 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_10/c1.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x440 top0 left440 grid_reveal ani_delay_2" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_10/c2.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x440 top0 left880 grid_reveal ani_delay_3" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_10/c3.jpg" alt="">
-                    </div>
-                    <div class="__img_box size860x210 top460 left0 grid_reveal ani_delay_5" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_10/c4.jpg" alt="">
-                        <div class="__img_box__text">
-                            <p>主案设计 | 李宏升</p>
-                            <p>项目名称 | 海南别墅</p>
-                            <p>项目地点 | 海南</p>
-                            <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                            <p>建筑面积 | 2000平方米</p>
-                        </div>
-                    </div>
-                    <div class="__img_box size420x210 top460 left880 grid_reveal ani_delay_6" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_10/c5.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div v-if="ctg=='5'||ctg==''" class="__project_box __project_box--type_c">
-                <div class="case1" onclick="javascript:window.location.href='./pro_11.html'">
-                    <div class="__img_box size860x210 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_11/c1.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x440 top0 left880 grid_reveal ani_delay_2" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_11/c2.jpg" alt="">
-                        <div class="__img_box__text">
-                            <p>主案设计 | 李宏升</p>
-                            <p>项目名称 | 信华建国大酒店自助餐厅</p>
-                            <p>项目地点 | 江西九江</p>
-                            <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                        </div>
-                    </div>
-                    <div class="__img_box size420x440 top230 left0 grid_reveal ani_delay_3" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_11/c3.jpg" alt="">
-                    </div>
-                    <div class="__img_box size420x210 top230 left440 grid_reveal ani_delay_5" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_11/c4.jpg" alt="">
-                    </div>
-                    <div class="__img_box size860x210 top460 left440 grid_reveal ani_delay_6" data-av-animation="self_slide_up">
-                        <img src="./content/product/pro_11/c5.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div v-if="ctg=='4'||ctg==''" class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_12.html'" data-index="1">
-                <img src="./content/product/pro_12/c1.jpg" alt="">
-                <div class="__img_box__text">
-                    <p>主案设计 | 李宏升</p>
-                    <p>项目名称 | 安徽国际幼儿园</p>
-                    <p>项目地点 | 安徽省宁国市</p>
-                    <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                    <p>建筑面积 | 3600平方</p>
-                </div>
-            </div> -->
+            <footer></footer>
         </div>
-        <div id="Footer"></div>
     </div>
     <!-- <div id="new_footer_container" class="pc_block" style="margin-top:70px;">
         <p>版权所有 ©御舍 沪ICP备19029924号-1</p>
@@ -375,10 +69,10 @@
     <script style="text/javascript" src="./content/script/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="./content/script/common.js"></script>
     <script src="./content/script/jquery-hover3d.min.js"></script>
-    <script type="text/javascript" src="./content/script/index.js"></script>
-    <script type="text/babel" src="./content/script/Vue-v2.6.10.js"></script>
-    <script type="text/babel" src="./content/script/product.json.js"></script>
-    <script type="text/babel" src="./content/script/Vue-ctg.js"></script>
+    <script type="text/javascript" src="./content/script/product.json.js"></script>
+    <script type="text/javascript" src="./content/script/Vue-v2.6.10.js"></script>
+    <script type="text/javascript" src="./content/script/lib/vue-components.js"></script>
+    <script type="text/javascript" src="./content/script/lib/vue-data.js"></script>
     <script>
     // loadScript('./content/script/aniview.js', function() {
     //     loadScript('./content/script/fastclick.js', function() {
