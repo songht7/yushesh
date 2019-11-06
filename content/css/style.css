@@ -362,7 +362,7 @@
     -o-transition: .3s cubic-bezier(0,.385,.345,1);
     transition: .3s cubic-bezier(0,.385,.345,1);
 }
-#new_header_containerex .top_logo{width:354px;height:100%;background:url('../images/logo.png') no-repeat center/contain;position:absolute;top:50%;left:50%;
+#new_header_containerex .top_logo{width:354px;height:80%;background:url('../images/logo.png') no-repeat center/contain;position:absolute;top:40%;left:50%;
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);

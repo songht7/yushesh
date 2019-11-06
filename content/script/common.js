@@ -8,21 +8,21 @@ var $body = $('body');
 
 var isMobile = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
 
-var $new_header_containerex = $('#new_header_containerex');
-$body.on('mousewheel',function(event,delta){
-    if(delta < 0){
-        //隐藏掉
-        $new_header_containerex.removeClass('open');
-    }else if(delta > 0){
-        if($(window).scrollTop() <= 500){
-            $new_header_containerex.removeClass('open');
-        }else{
-            $new_header_containerex.addClass('open');
-        }
-    }
-});
 $(function(){
     $('.grid_reveal').AniView(options);
+    var $new_header_containerex = $('#new_header_containerex');
+    $body.on('mousewheel',function(event,delta){
+        if(delta < 0){
+            //隐藏掉
+            $new_header_containerex.removeClass('open');
+        }else if(delta > 0){
+            if($(window).scrollTop() <= 500){
+                $new_header_containerex.removeClass('open');
+            }else{
+                $new_header_containerex.addClass('open');
+            }
+        }
+    });
 });
 
 
