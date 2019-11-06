@@ -18,8 +18,6 @@ new Vue({
     const _ctg = that.GetUrlParam("ctg");
 
     that.ctg = _ctg;
-    const d = that.proList.map((obj, k) => obj.id == that.ctg);
-    console.log(d);
   },
 
   methods: {

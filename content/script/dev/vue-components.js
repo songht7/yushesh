@@ -4,7 +4,7 @@ Vue.component('top-header', {
                         <div class="top_logo" onClick="window.location.href=\'index.html\'"><img src="./content/images/logo.png" alt="" /></div>\
                         <ul class="sub_nav">\
                             <li>\
-                                <a href="index.html"><span>作品11</span></a>\
+                                <a href="index.html"><span>作品</span></a>\
                                 <ul class="nav_sub">\
                                     <li><a href="index.html?ctg=1"><span>私宅、样板房、别墅</span></a></li>\
                                     <li><a href="index.html?ctg=2"><span>会所、售楼处</span></a></li>\
@@ -88,7 +88,7 @@ Vue.component('mobile-share', {
     }
 })
 
-Vue.component('footer', {
+Vue.component('footer-box', {
     template: '<div class="foot">\
                 <div id="new_footer_container" class="pc_block">\
                     <p>版权所有 ©御舍 沪ICP备19029924号-1</p>\

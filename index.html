@@ -25,14 +25,8 @@
     <link rel="stylesheet" href="./content/css/style.css">
     <!-- <link rel="stylesheet" href="./content/css/reset.css"> -->
     <link rel="stylesheet" href="./content/css/media.css">
-    <!-- <script type="text/javascript" src="./content/script/loadScript.js"></script> -->
     <script type="text/javascript" src="./content/script/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="./content/script/index.js"></script>
-    <!-- <script type="text/javascript" src="http://www.hkdomani.com/public/wap/js/rem.js"></script> 
-    <script src="./content/script/babel-v7.6.4.min.js"></script>
-    <script src="./content/script/react.production.min.js"></script>
-    <script src="./content/script/react-dom.production.min.js"></script>
-    <script type="text/babel" src="./content/script/nav.js"></script>-->
 </head>
 
 <body>
@@ -40,29 +34,28 @@
         <top-header></top-header>
         <div id="main_container" class="page_index_div">
             <div class="main_inner_box">
-                <div class="__project_box __project_box--type_c">
-                    <div class="case1" onclick="javascript:window.location.href='./pro_1.html'">
-                        <div class="scroll_header __img_box __img_box--1 size420x440 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up" data-index="3"><img src="./content/product/pro_1/c1.jpg" alt="">
-                            <div class="__img_box__text">
-                                <p>主案设计 | 李宏升</p>
-                                <p>项目名称 | 九江观澜盛世</p>
-                                <p>项目地点 | 江西九江</p>
-                                <p>施工单位 | 御舍（上海）建设工程有限公司</p>
-                                <p>建筑面积 | 380平方</p>
-                            </div>
+                <template v-for="pro,k in proList">
+                    <div :class="['__project_box','__project_box--'+pro.showType]">
+                        <div :class="['case'+(k+1)]" @click='winLocation(pro.id)'>
+                            <template v-for="c,i in pro.cover">
+                                <div :class="['scroll_header','__img_box','__img_box--'+(i+1),'size'+c.size,'top'+c.top,'left'+c.left,'grid_reveal','ani_delay_'+(i+1)]" data-av-animation="self_slide_up" data-index="3">
+                                    <img :src="['./content/product/pro_'+pro.id+'/'+c.url]" alt="" />
+                                    <div class="__img_box__text" v-if="pro.txtPlace==(i+1)">
+                                        <p>主案设计 | {{pro.design}}</p>
+                                        <p>项目名称 | {{pro.title}}</p>
+                                        <p>项目地点 | {{pro.location}}</p>
+                                        <p>施工单位 | {{pro.designCom}}</p>
+                                        <p>建筑面积 | {{pro.area}}</p>
+                                    </div>
+                                </div>
+                            </template>
                         </div>
                     </div>
-                </div>
+                </template>
             </div>
-            <footer></footer>
+            <footer-box></footer-box>
         </div>
     </div>
-    <!-- <div id="new_footer_container" class="pc_block" style="margin-top:70px;">
-        <p>版权所有 ©御舍 沪ICP备19029924号-1</p>
-    </div>
-    <div id="mobile_footer_container" class="mobile_block border-top-1px" style="margin-top:.93rem">
-        <p>版权所有 ©御舍 沪ICP备19029924号-1</p>
-    </div> -->
     <script type="text/javascript" src="./content/script/aniview.js"></script>
     <script type="text/javascript" src="./content/script/fastclick.js"></script>
     <script type="text/javascript" src="./content/script/jquery.mousewheel.min.js"></script>
@@ -73,21 +66,6 @@
     <script type="text/javascript" src="./content/script/Vue-v2.6.10.js"></script>
     <script type="text/javascript" src="./content/script/lib/vue-components.js"></script>
     <script type="text/javascript" src="./content/script/lib/vue-data.js"></script>
-    <script>
-    // loadScript('./content/script/aniview.js', function() {
-    //     loadScript('./content/script/fastclick.js', function() {
-    //         loadScript('./content/script/jquery.mousewheel.min.js', function() {
-    //             loadScript('./content/script/jquery.waypoints.min.js', function() {
-    //                 loadScript('./content/script/common.js', function() {
-    //                     loadScript('./content/script/jquery-hover3d.min.js', function() {
-    //                         console.log("script loaded");
-    //                     });
-    //                 });
-    //             });
-    //         });
-    //     });
-    // });
-    </script>
     <script>
     // $(".project_title").hover3d({
     //     selector: ".title_img_box",
