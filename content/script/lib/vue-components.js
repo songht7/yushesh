@@ -1,3 +1,6 @@
+Vue.component('top-head', {
+  template: '#top-head'
+});
 Vue.component('top-header', {
   template: '<div><div id="new_header_container" class="page_detail pc_block">\
                     <div class="nmbHover">\
