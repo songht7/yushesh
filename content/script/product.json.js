@@ -9,6 +9,7 @@
 var proList = [{
     "id": 13,
     "ctg": 1,
+    "ctgName":"办公空间",
     "title": "上海谨道电商办公室",
     "design": "李宏升",
     "designCom": "御舍设计",
@@ -62,6 +63,7 @@ var proList = [{
 }, {
     "id": 14,
     "ctg": 2,
+    "ctgName":"会所售楼处",
     "title": "芙蕖茶苑会所",
     "design": "李宏升",
     "designCom": "御舍设计",
@@ -107,7 +109,8 @@ var proList = [{
     "dtlImgs": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
 }, {
     "id": 2,
-    "ctg": 2,
+    "ctg": 3,
+    "ctgName":"酒店",
     "title": "信华酒店",
     "design": "李宏升",
     "designCom": "御舍设计",
@@ -126,7 +129,8 @@ var proList = [{
     "dtlImgs": ["2.jpg", "3.jpg", "4.jpg", "5.png", "6.jpg", "7.png", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg", "18.jpg", "19.jpg", "20.jpg", "21.jpg", "22.jpg", "23.jpg", "24.jpg", "25.jpg", "26.jpg", "27.jpg", "28.jpg", "29.jpg", "30.jpg"]
 }, {
     "id": 15,
-    "ctg": 2,
+    "ctg": 3,
+    "ctgName":"酒店",
     "title": "建国龙吟日料餐厅",
     "design": "李宏升",
     "softDesign": "陈婷婷",
@@ -185,7 +189,8 @@ var proList = [{
     "dtlImgs": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.png", "6.jpg", "7.png", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg", "18.jpg", "19.jpg", "20.jpg", "21.jpg", "22.jpg", "23.jpg", "24.jpg"]
 }, {
     "id": 16,
-    "ctg": 2,
+    "ctg": 3,
+    "ctgName":"酒店",
     "title": "上海隆江大酒店",
     "design": "李宏升",
     "softDesign": "赵晟  陈婷婷",
@@ -237,4 +242,52 @@ var proList = [{
     "content": "",
     "dtlImgType": "full",
     "dtlImgs": ["2.png", "3.jpg", "4.jpg", "5.jpg"]
+}, {
+    "id": 17,
+    "ctg": 3,
+    "ctgName":"酒店",
+    "title": "濮院国贸酒店",
+    "design": "李宏升",
+    "designCom": "御舍设计",
+    "location": "浙江桐乡",
+    "construction": "御舍（上海）建设工程有限公司",
+    "area": "1300㎡",
+    "txtPlace": 5,
+    "textRlign": "right",
+    "showType": "type_a",
+    "cover": [{
+        "url": "c1.jpg",
+        "size": "420x440",
+        "left": "0",
+        "top": "0"
+    }, {
+        "url": "c2.jpg",
+        "size": "860x4210",
+        "left": "440",
+        "top": "0"
+    }, {
+        "url": "c3.jpg",
+        "size": "860x4210",
+        "left": "440",
+        "top": "230"
+    }, {
+        "url": "c4.jpg",
+        "size": "420x210",
+        "left": "0",
+        "top": "460"
+    }, {
+        "url": "c5.jpg",
+        "size": "860x4210",
+        "left": "440",
+        "top": "460"
+    }, {
+        "url": "c6.jpg",
+        "size": "860x4210",
+        "left": "440",
+        "top": "690"
+    }],
+    "designConcept": "",
+    "content": "",
+    "dtlImgType": "full",
+    "dtlImgs": ["1.png","2.png", "3.png"]
 }];
