@@ -1,4 +1,4 @@
-// npx babel src -d lib
+// npx babel dev -d lib
 new Vue({
     el: "#Wrapper",
     data: {
