@@ -43,7 +43,9 @@ new Vue({
             if (_ctg) {
                 console.log("_ctg");
                 that.products = that.products.filter((obj, k) => obj.ctg == _ctg);
-                $('.grid_reveal').AniView(options);
+                setTimeout(() => {
+                    $('.grid_reveal').AniView(options);
+                }, 1000);
             } else {
                 $('.grid_reveal').AniView(options);
             }
