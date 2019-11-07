@@ -34,9 +34,9 @@
         <top-header></top-header>
         <div id="main_container" class="page_index_div">
             <div class="main_inner_box">
-                <template v-for="pro,k in proList">
+                <template v-for="pro,k in products">
                     <div :class="['__project_box','__project_box--'+pro.showType]">
-                        <div :class="['case'+(k+1)]" @click='winLocation(pro.id)'>
+                        <div :class="['case1','case'+(k+1)]" @click='winLocation(pro.id)'>
                             <template v-for="c,i in pro.cover">
                                 <div :class="['scroll_header','__img_box','__img_box--'+(i+1),'size'+c.size,'top'+c.top,'left'+c.left,'grid_reveal','ani_delay_'+(i+1)]" data-av-animation="self_slide_up" data-index="3">
                                     <img :src="['./content/product/pro_'+pro.id+'/'+c.url]" alt="" />
@@ -64,7 +64,6 @@
     <script src="./content/script/jquery-hover3d.min.js"></script>
     <script type="text/javascript" src="./content/script/product.json.js"></script>
     <script type="text/javascript" src="./content/script/Vue-v2.6.10.js"></script>
-    <!--<script type="text/x-template" src="./content/script/lib/top-header.js" id="top-head" ></script>-->
     <script type="text/javascript" src="./content/script/lib/vue-components.js"></script>
     <script type="text/javascript" src="./content/script/lib/vue-data.js"></script>
     <script>

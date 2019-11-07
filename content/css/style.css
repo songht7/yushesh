@@ -2,6 +2,7 @@
 /* CSS Document */
 .grid-item { width: 30%; padding-bottom: 15px}
 .grid-item--width2 { width: 50%; }
+.grid-item--full { width: 100%;}
 .grid-item img{width: 95%;margin: 0 auto;display: block;}
 .grid-mobile .grid-item--width2,.grid-mobile .grid-item img{width: 100%}
 .page_index_div {

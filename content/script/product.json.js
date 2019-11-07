@@ -1,3 +1,11 @@
+/*
+	{ "id": 1, "label": "办公空间" },
+	{ "id": 2, "label": "会所售楼处" },
+	{ "id": 3, "label": "酒店" },
+	{ "id": 4, "label": "商业空间" },
+	{ "id": 5, "label": "私宅样板房别墅" },
+	{ "id": 6, "label": "文博产业" }
+*/
 var proList = [{
     "id": 13,
     "ctg": 1,
@@ -5,8 +13,10 @@ var proList = [{
     "design": "李宏升",
     "designCom": "御舍设计",
     "location": "中国上海",
+    "area": "上海市長寧區長寧來福士辦公樓1A22F",
     "construction": "御舍（上海）建设工程有限公司",
     "area": "1000㎡",
+    "style":"",
     "txtPlace": 7,
     "textRlign": "right",
     "showType": "type_a",
@@ -45,11 +55,14 @@ var proList = [{
         "size": "860x210",
         "left": "440",
         "top": "690"
-    }]
-},{
-    "id": 13,
-    "ctg": 1,
-    "title": "上海谨道电商办公室",
+    }],
+    "designConcept":"以象形文字中品字的形字以馬的蹄印演化而來，而馬的精神正是品優，品質、品格，代表著公司的三位股東精神，及企業形象",
+    "content": "",
+    "dtlImgs":["1.jpg","2.jpg","3.png","4.jpg","5.jpg","6.jpg","7.png","8.png"]
+}, {
+    "id": 14,
+    "ctg": 2,
+    "title": "22222",
     "design": "李宏升",
     "designCom": "御舍设计",
     "location": "中国上海",
@@ -94,10 +107,10 @@ var proList = [{
         "left": "440",
         "top": "690"
     }]
-},{
-    "id": 13,
-    "ctg": 1,
-    "title": "上海谨道电商办公室",
+}, {
+    "id": 15,
+    "ctg": 2,
+    "title": "3333",
     "design": "李宏升",
     "designCom": "御舍设计",
     "location": "中国上海",
@@ -142,10 +155,10 @@ var proList = [{
         "left": "440",
         "top": "690"
     }]
-},{
-    "id": 13,
-    "ctg": 1,
-    "title": "上海谨道电商办公室",
+}, {
+    "id": 16,
+    "ctg": 3,
+    "title": "4444",
     "design": "李宏升",
     "designCom": "御舍设计",
     "location": "中国上海",

@@ -2,8 +2,10 @@
 new Vue({
   el: "#Wrapper",
   data: {
+    id: "",
     ctg: "",
-    proList: proList
+    products: proList,
+    detail: {}
   },
 
   created(e) {
@@ -12,17 +14,50 @@ new Vue({
 
   mounted(e) {
     console.log("mounted:");
-    $('.grid_reveal').AniView(options);
-    const that = this;
+    var that = this;
 
-    const _ctg = that.GetUrlParam("ctg");
+    var _ctg = that.GetUrlParam("ctg");
+
+    var _id = that.GetUrlParam("id");
 
     that.ctg = _ctg;
+    that.id = _id;
+    that.setData(); //async
   },
 
   methods: {
     winLocation(id) {
-      window.location.href = '/pro_' + id + '.html';
+      window.location.href = '/pro_detail.html?id=' + id;
+    },
+
+    setData() {
+      var that = this;
+      var _ctg = that.ctg,
+          _id = that.id;
+
+      if (_id) {
+        console.log("_id");
+        let detail = that.products.filter((obj, k) => obj.id == _id);
+        that.detail = detail[0];
+        console.log(that.detail);
+        setTimeout(() => {
+          $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: 0
+          });
+          $('.grid_reveal').AniView(options);
+        }, 1000);
+      }
+
+      if (_ctg) {
+        console.log("_ctg");
+        that.products = that.products.filter((obj, k) => obj.ctg == _ctg);
+        $('.grid_reveal').AniView(options);
+      } else {
+        $('.grid_reveal').AniView(options);
+      }
+
+      console.log(that.products);
     },
 
     GetUrlParam(paraName) {
