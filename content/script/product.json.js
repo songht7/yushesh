@@ -183,4 +183,58 @@ var proList = [{
     "content": "",
     "dtlImgType": "full",
     "dtlImgs": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.png", "6.jpg", "7.png", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg", "17.jpg", "18.jpg", "19.jpg", "20.jpg", "21.jpg", "22.jpg", "23.jpg", "24.jpg"]
+}, {
+    "id": 16,
+    "ctg": 2,
+    "title": "上海隆江大酒店",
+    "design": "李宏升",
+    "softDesign": "赵晟  陈婷婷",
+    "softDesignSub": "王茜",
+    "designCom": "御舍设计",
+    "location": "中国上海",
+    "construction": "御舍（上海）建设工程有限公司",
+    "area": "600㎡",
+    "txtPlace": 5,
+    "textRlign": "right",
+    "showType": "type_a",
+    "cover": [{
+        "url": "c1.jpg",
+        "size": "420x440",
+        "left": "0",
+        "top": "0"
+    }, {
+        "url": "c2.jpg",
+        "size": "420x440",
+        "left": "440",
+        "top": "0"
+    }, {
+        "url": "c3.jpg",
+        "size": "420x440",
+        "left": "880",
+        "top": "0"
+    }, {
+        "url": "c4.jpg",
+        "size": "420x210",
+        "left": "0",
+        "top": "460"
+    }, {
+        "url": "c5.jpg",
+        "size": "860x210",
+        "left": "440",
+        "top": "460"
+    }, {
+        "url": "c6.jpg",
+        "size": "420x210",
+        "left": "0",
+        "top": "690"
+    }, {
+        "url": "c7.jpg",
+        "size": "860x210",
+        "left": "440",
+        "top": "690"
+    }],
+    "designConcept": "",
+    "content": "",
+    "dtlImgType": "full",
+    "dtlImgs": ["2.png", "3.jpg", "4.jpg", "5.jpg"]
 }];
