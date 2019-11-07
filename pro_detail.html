@@ -44,6 +44,12 @@
                     <div class="text_info_box">
                         <p class="text_content"><span class="text_title">主案设计</span> | {{detail.design}}</p>
                     </div>
+                    <div class="text_info_box" v-if="detail.softDesign">
+                        <p class="text_content"><span class="text_title">软装设计师</span> | {{detail.softDesign}}</p>
+                    </div>
+                    <div class="text_info_box" v-if="detail.partDesign">
+                        <p class="text_content"><span class="text_title">参与设计</span> | {{detail.partDesign}}</p>
+                    </div>
                     <div class="text_info_box" v-if="detail.style">
                         <p class="text_content"><span class="text_title">风格定位</span> | {{detail.style}}</p>
                     </div>
@@ -64,14 +70,24 @@
         </div>
         <div id="detail_main_container" class="pc_block">
             <div class="detail_inner_container" id="pc_detail_container">
-                <div class="grid">
+                <template v-if="detail.designConcept">
+                    <p><span style="color: rgb(48, 48, 48);">设计概念</p>
+                    <p>{{detail.designConcept}}</p>
+                    <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
+                </template>
+                <div :class="[detail.dtlImgType?'grid-full':'grid']">
                     <template v-for="img,k in detail.dtlImgs" :key="k">
-                        <div class="grid-item grid-item--width2 grid_reveal" data-av-animation="self_slide_up"><img :src='"./content/product/pro_"+detail.id+"/"+img' style="" title="" /></div>
+                        <div :class="['grid-item',detail.dtlImgType?'grid-item--full':'grid-item--width2','grid_reveal']" data-av-animation="self_slide_up"><img :src='"./content/product/pro_"+detail.id+"/"+img' style="" title="" /></div>
                     </template>
                 </div>
             </div>
         </div>
         <div class="mobile_main_page_body mobile_block" id="detail_container_mobile">
+            <template v-if="detail.designConcept">
+                <p><span style="color: rgb(48, 48, 48);">设计概念</p>
+                <p>{{detail.designConcept}}</p>
+                <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
+            </template>
             <div class="mobile_main_body_container">
                 <div class="mobile_project_info">
                     <p class="deep_gray">项目名称 | {{detail.title}}</p>

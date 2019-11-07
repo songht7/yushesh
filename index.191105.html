@@ -32,7 +32,7 @@
     <script src="./content/script/react.production.min.js"></script>
     <script src="./content/script/react-dom.production.min.js"></script>
     <script src="./content/script/babel-v7.6.4.min.js"></script>
-    <script type="text/babel" src="./content/script/nav.js"></script>
+    <script type="text/babel" src="./content/script/lib/nav.js"></script>
 </head>
 
 <body>
@@ -74,7 +74,7 @@
     </div>
     <div id="main_container" class="page_index_div" style="" v-cloak>
         <div class="main_inner_box">
-            <div v-if="ctg=='2'||ctg==''" class="__project_box __project_box--type_c">
+            <div class="__project_box __project_box--type_c">
                 <div class="case1" onclick="javascript:window.location.href='./pro_1.html'">
                     <div class="scroll_header __img_box __img_box--1 size420x440 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up" data-index="3"><img src="./content/product/pro_1/c1.jpg" alt="">
                         <div class="__img_box__text">
@@ -93,7 +93,7 @@
                     <div class="__img_box __img_box--7 size860x210 top460 left440 grid_reveal ani_delay_7" data-av-animation="self_slide_up"><img src="./content/product/pro_1/c7.jpg" alt=""></div>
                 </div>
             </div>
-            <div v-if="ctg=='2'||ctg==''" class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_2.html'" data-index="1">
+            <div class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_2.html'" data-index="1">
                 <img src="./content/product/pro_2/c1.jpg" alt="">
                 <div class="__img_box__text __img_box__text--right">
                     <p>主案设计 | 李宏升</p>
@@ -103,7 +103,7 @@
                     <p>建筑面积 | 3000平方</p>
                 </div>
             </div>
-            <div v-if="ctg=='1'||ctg==''" class="__project_box __project_box--type_a">
+            <div class="__project_box __project_box--type_a">
                 <div class="case1" onclick="javascript:window.location.href='./pro_3.html'">
                     <div class="scroll_header __img_box __img_box--1 top0 left0 size420x670 grid_reveal ani_delay_1" data-av-animation="self_slide_up" data-index="0">
                         <img src="./content/product/pro_3/c1.jpg" alt="">
@@ -134,7 +134,7 @@
                     <div class="__img_box __img_box--8 top690 left880 size420x210 grid_reveal ani_delay_8" data-av-animation="self_slide_up"><img src="./content/product/pro_3/c8.jpg" alt=""></div>
                 </div>
             </div>
-            <div v-if="ctg=='1'||ctg==''" class="__project_box __project_box--type_b">
+            <div  class="__project_box __project_box--type_b">
                 <div class="case1" onclick="javascript:window.location.href='./pro_4.html'">
                     <div class="scroll_header __img_box __img_box--1 size420x210 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up" data-index="2">
                         <img src="./content/product/pro_4/c1.jpg" alt="">
@@ -167,7 +167,7 @@
                     <div class="__img_box __img_box--8 top690 left880 size420x210 grid_reveal ani_delay_8" data-av-animation="self_slide_up"><img src="./content/product/pro_4/c8.jpg" alt=""></div>
                 </div>
             </div>
-            <div v-if="ctg=='2'||ctg==''" class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_5.html'" data-index="1">
+            <div class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_5.html'" data-index="1">
                 <img src="./content/product/pro_5/c1.jpg" alt="">
                 <div class="__img_box__text __img_box__text--right">
                     <p>主案设计 | 李宏升</p>
@@ -177,7 +177,7 @@
                     <p>设计理念 | 日式漆器文化</p>
                 </div>
             </div>
-            <div v-if="ctg=='3'||ctg==''" class="__project_box __project_box--type_b">
+            <div class="__project_box __project_box--type_b">
                 <div class="case1" onclick="javascript:window.location.href='./pro_6.html'">
                     <div class="__img_box size860x210 top0 left0 grid_reveal ani_delay_5" data-av-animation="self_slide_up">
                         <img src="./content/product/pro_6/c1.jpg" alt="">
@@ -209,7 +209,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="ctg=='2'||ctg==''" class="__project_box __project_box--type_b">
+            <div class="__project_box __project_box--type_b">
                 <div class="case1" onclick="javascript:window.location.href='./pro_7.html'">
                     <div class="__img_box size860x210 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up">
                         <img src="./content/product/pro_7/c1.jpg" alt="">
@@ -241,7 +241,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="ctg=='3'||ctg==''" class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_8.html'" data-index="1">
+            <div class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_8.html'" data-index="1">
                 <img src="./content/product/pro_8/c1.jpg" alt="">
                 <div class="__img_box__text">
                     <p>主案设计 | 李宏升</p>
@@ -251,7 +251,7 @@
                     <p>项目面积 | 占地面积约8万平方米</p>
                 </div>
             </div>
-            <div v-if="ctg=='4'||ctg==''" class="__project_box __project_box--type_b">
+            <div class="__project_box __project_box--type_b">
                 <div class="case1" onclick="javascript:window.location.href='./pro_9.html'">
                     <div class="__img_box size420x210 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up">
                         <img src="./content/product/pro_9/c1.jpg" alt="">
@@ -282,7 +282,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="ctg=='5'||ctg==''" class="__project_box __project_box--type_c">
+            <div class="__project_box __project_box--type_c">
                 <div class="case1" onclick="javascript:window.location.href='./pro_10.html'">
                     <div class="__img_box size420x440 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up">
                         <img src="./content/product/pro_10/c1.jpg" alt="">
@@ -308,7 +308,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="ctg=='5'||ctg==''" class="__project_box __project_box--type_c">
+            <div class="__project_box __project_box--type_c">
                 <div class="case1" onclick="javascript:window.location.href='./pro_11.html'">
                     <div class="__img_box size860x210 top0 left0 grid_reveal ani_delay_1" data-av-animation="self_slide_up">
                         <img src="./content/product/pro_11/c1.jpg" alt="">
@@ -333,7 +333,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="ctg=='4'||ctg==''" class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_12.html'" data-index="1">
+            <div class="scroll_header __project_box __project_box--single grid_reveal ani_delay_1" data-av-animation="self_slide_up" onclick="javascript:window.location.href='./pro_12.html'" data-index="1">
                 <img src="./content/product/pro_12/c1.jpg" alt="">
                 <div class="__img_box__text">
                     <p>主案设计 | 李宏升</p>
@@ -352,13 +352,11 @@
     <div id="mobile_footer_container" class="mobile_block border-top-1px" style="margin-top:.93rem">
         <p>版权所有 ©御舍 沪ICP备19029924号-1</p>
     </div> -->
-    <script type="text/babel" src="./content/script/Vue-v2.6.10.js"></script>
-    <script type="text/babel" src="./content/script/Vue-ctg.js"></script>
     <script type="text/javascript" src="./content/script/aniview.js"></script>
     <script type="text/javascript" src="./content/script/fastclick.js"></script>
     <script type="text/javascript" src="./content/script/jquery.mousewheel.min.js"></script>
     <script style="text/javascript" src="./content/script/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="./content/script/common.js"></script>
+    <script type="text/javascript" src="./content/script/common.bak.js"></script>
     <script src="./content/script/jquery-hover3d.min.js"></script> 
     <script>
     // loadScript('./content/script/aniview.js', function() {
