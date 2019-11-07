@@ -106,8 +106,8 @@ var proList = [{
     "content": "",
     "dtlImgs": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"]
 }, {
-    "id": 2,
-    "ctg": 3,
+    "id": 15,
+    "ctg": 2,
     "title": "信华酒店",
     "design": "李宏升",
     "designCom": "御舍设计",
