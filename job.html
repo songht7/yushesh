@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,234 +28,198 @@
     <!-- <script type="text/javascript" src="http://www.hkdomani.com/public/wap/js/rem.js"></script> -->
     <script type="text/javascript" src="./content/script/index.js"></script>
     <script type="text/javascript" src="./content/script/jquery-1.9.1.min.js"></script>
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <script type="text/babel" src="./content/script/nav.js"></script>
 </head>
 
 <body>
-    <div id="new_header_container" class="page_detail pc_block">
-        <div class="nmbHover">
-            <div id="Logo"></div>
-            <div class="pcNav"></div>
-        </div>
-    </div>
-    <div id="new_header_containerex" class="page_detail pc_block">
-        <div class="nmbHover">
-            <div id="TopLogo"></div>
-            <div class="pcNav"></div>
-        </div>
-    </div>
-    <div id="mobile_header_container" class="mobile_block">
-        <div id="MobileLogo"></div>
-        <div id="sub_nav_bts">
-            <i></i>
-            <i></i>
-            <i></i>
-        </div>
-        <div id="mobile_sub_nav_page">
-            <div class="sub_nav_list" id="sub_nav_list">
-                <div class="mobile_top_logo"></div>
-                <div id="MobileNav"></div>
-            </div>
-            <div class="sub_nav_bg" id="sub_nav_bg"></div>
-        </div>
-    </div>
-    <div id="hide_banner_top" class="mobile_block close">
-        <div class="_nmb">
-            <div class="table_father">
-                <div class="table_child"></div>
-            </div>
-        </div>
-    </div>
-    <div id="join_container" class="">
-        <div class="main_bone_container">
-            <div class="page_text_container">
-                <div class="title grid_reveal" data-av-animation="self_slide_up">join us | 加入我们</div>
-                <div class="text grid_reveal ani_delay_1" data-av-animation="self_slide_up" style="margin-top:41px;">
-                    <!-- <p class="en">We want those who regard design as happiness and are willing to devote to it.</p> -->
-                    <p class="cn">目前正在招聘的职位有：硬装专案设计师 / 室内专案设计师 / 室内方案设计师 / 室内效果图设计师 / 室内设计师 / 室内软装设计师 / 设计师助理 / 品牌推广专员 等</p>
+    <div id="Wrapper" v-cloak>
+        <top-header></top-header>
+        <div id="join_container" class="">
+            <div class="main_bone_container">
+                <div class="page_text_container">
+                    <div class="title grid_reveal" data-av-animation="self_slide_up">join us | 加入我们</div>
+                    <div class="text grid_reveal ani_delay_1" data-av-animation="self_slide_up" style="margin-top:41px;">
+                        <!-- <p class="en">We want those who regard design as happiness and are willing to devote to it.</p> -->
+                        <p class="cn">目前正在招聘的职位有：硬装专案设计师 / 室内专案设计师 / 室内方案设计师 / 室内效果图设计师 / 室内设计师 / 室内软装设计师 / 设计师助理 / 品牌推广专员 等</p>
+                    </div>
                 </div>
-            </div>
-            <ul id="job_list">
-                <li class="grid_reveal" data-av-animation="self_slide_up">
-                    <div class="title">设计总监</div>
-                    <div class="job_summary">
-                        <div class="title">任职要求</div>
-                        <div class="text">
-                            <p>1. 建筑设计、室内设计相关专业本科以上学历(含本科)；</p>
-                            <p>2. 至少10年以上专业室内设计公司的工作经验（不含家装公司或施工图制图、不含实习期间），并独立负责大型建筑室内设计项目及高级豪宅、会所业务；</p>
-                            <p>3. 熟练掌握各种制图软件，如AUTOCAD、PHOTOSHOP、3DMAX、PPT等，熟练掌握各种办公软件等；</p>
-                            <p>4. 很强的手绘表现能力；</p>
-                            <p>5. 具有施工图制作能力，对材料的特性及运用熟练，精通施工工艺和流程，对施工流程及施工法如数家珍；</p>
-                            <p>6. 具备控制协调掌控项目进度、设计质量的能力；</p>
-                            <p>7. 能独立设计，有时尚品味，有创新的设计概念和灵感；</p>
-                            <p>8. 能带领独立的设计小组进行高效率的工作，具备优秀的职业素质；</p>
-                            <p>9. 有设计师沉淀后的个人魅力, 组织能力强,善沟通协调,对自身实力及阶段性定位清楚,想在设计领域达到更高境界,对建筑及室内设计有自己的见解。</p>
+                <ul id="job_list">
+                    <li class="grid_reveal" data-av-animation="self_slide_up">
+                        <div class="title">设计总监</div>
+                        <div class="job_summary">
+                            <div class="title">任职要求</div>
+                            <div class="text">
+                                <p>1. 建筑设计、室内设计相关专业本科以上学历(含本科)；</p>
+                                <p>2. 至少10年以上专业室内设计公司的工作经验（不含家装公司或施工图制图、不含实习期间），并独立负责大型建筑室内设计项目及高级豪宅、会所业务；</p>
+                                <p>3. 熟练掌握各种制图软件，如AUTOCAD、PHOTOSHOP、3DMAX、PPT等，熟练掌握各种办公软件等；</p>
+                                <p>4. 很强的手绘表现能力；</p>
+                                <p>5. 具有施工图制作能力，对材料的特性及运用熟练，精通施工工艺和流程，对施工流程及施工法如数家珍；</p>
+                                <p>6. 具备控制协调掌控项目进度、设计质量的能力；</p>
+                                <p>7. 能独立设计，有时尚品味，有创新的设计概念和灵感；</p>
+                                <p>8. 能带领独立的设计小组进行高效率的工作，具备优秀的职业素质；</p>
+                                <p>9. 有设计师沉淀后的个人魅力, 组织能力强,善沟通协调,对自身实力及阶段性定位清楚,想在设计领域达到更高境界,对建筑及室内设计有自己的见解。</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="job_summary">
-                        <div class="title">岗位职责</div>
-                        <div class="text">
-                            <p>1. 负责设计项目的方案及深化；</p>
-                            <p>2. 负责施工现场的协调和配合，解决施工现场的各类问题，完善项目的设计细节；</p>
-                            <p>3. 控制项目进度和设计质量。</p>
+                        <div class="job_summary">
+                            <div class="title">岗位职责</div>
+                            <div class="text">
+                                <p>1. 负责设计项目的方案及深化；</p>
+                                <p>2. 负责施工现场的协调和配合，解决施工现场的各类问题，完善项目的设计细节；</p>
+                                <p>3. 控制项目进度和设计质量。</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="job_summary">
-                        <div class="title">沟通能力</div>
-                        <div class="text">
-                            <p><b>沟通能力</b></p>
-                            <p>1. 具有很好的沟通理解能力，并且具有協調整合能力；</p>
-                            <p>2. 与上司沟通的过程中能很好的理解上司表达的意思，且能与同事间的传达；</p>
-                            <p>3. 能够独立同时负责多个项目、并且有与业主及施工人员沟通讲解及解决疑难的能力。</p>
+                        <div class="job_summary">
+                            <div class="title">沟通能力</div>
+                            <div class="text">
+                                <p><b>沟通能力</b></p>
+                                <p>1. 具有很好的沟通理解能力，并且具有協調整合能力；</p>
+                                <p>2. 与上司沟通的过程中能很好的理解上司表达的意思，且能与同事间的传达；</p>
+                                <p>3. 能够独立同时负责多个项目、并且有与业主及施工人员沟通讲解及解决疑难的能力。</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="job_summary">
-                        <div class="title">工作态度</div>
-                        <div class="text">
-                            <p>1. 态度认真，具有上进心，具备抗压能力；</p>
-                            <p>2. 能主动积极、细心的处理工作事宜；</p>
-                            <p>3. 有强烈的责任心能按时、高质量的完成分配的任务，有良好的团队意识，积极进取、努力向上；</p>
-                            <p>4. 有长期为公司效力与有管理经验者优先；</p>
+                        <div class="job_summary">
+                            <div class="title">工作态度</div>
+                            <div class="text">
+                                <p>1. 态度认真，具有上进心，具备抗压能力；</p>
+                                <p>2. 能主动积极、细心的处理工作事宜；</p>
+                                <p>3. 有强烈的责任心能按时、高质量的完成分配的任务，有良好的团队意识，积极进取、努力向上；</p>
+                                <p>4. 有长期为公司效力与有管理经验者优先；</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="grid_reveal" data-av-animation="self_slide_up">
-                    <div class="title">家具設計師</div>
-                    <div class="job_summary">
-                        <div class="title">岗位职责</div>
-                        <div class="text">
-                            <p>1.主动和公司分配的意向客户进行有效的沟通，挖掘客户需求。</p>
-                            <p>2.基于客户的需求，上门量尺，设计方案，最终达成合作。</p>
-                            <p>3.维护老客户，最大力度的发掘老客户介绍新客户。</p>
-                            <p>4.定期与潜在客户进行沟通，使之转化为成交客户。</p>
-                            <p>5.脚踏实地，认真对待每一天的工作。</p>
-                            <p>6.独立操作整体软装方案设计及现场执行。</p>
-                            <p>7.上级交付的其他事务。</p>
+                    </li>
+                    <li class="grid_reveal" data-av-animation="self_slide_up">
+                        <div class="title">家具設計師</div>
+                        <div class="job_summary">
+                            <div class="title">岗位职责</div>
+                            <div class="text">
+                                <p>1.主动和公司分配的意向客户进行有效的沟通，挖掘客户需求。</p>
+                                <p>2.基于客户的需求，上门量尺，设计方案，最终达成合作。</p>
+                                <p>3.维护老客户，最大力度的发掘老客户介绍新客户。</p>
+                                <p>4.定期与潜在客户进行沟通，使之转化为成交客户。</p>
+                                <p>5.脚踏实地，认真对待每一天的工作。</p>
+                                <p>6.独立操作整体软装方案设计及现场执行。</p>
+                                <p>7.上级交付的其他事务。</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="job_summary">
-                        <div class="title">任职资格</div>
-                        <div class="text">
-                            <p>1. 大专及以上学历，环艺，室内设计等专业毕业。</p>
-                            <p>2.拥有3年以上软装公司工作经验或6年以上家装公司工作经验。</p>
-                            <p>3.擅长软装配饰设计，对各类设计风格有深刻体会。</p>
-                            <p>4.出色的沟通表达能力，对设计和销售的热情较高。</p>
-                            <p>5.学习能力强，吃苦耐劳，能承受一定的压力。</p>
+                        <div class="job_summary">
+                            <div class="title">任职资格</div>
+                            <div class="text">
+                                <p>1. 大专及以上学历，环艺，室内设计等专业毕业。</p>
+                                <p>2.拥有3年以上软装公司工作经验或6年以上家装公司工作经验。</p>
+                                <p>3.擅长软装配饰设计，对各类设计风格有深刻体会。</p>
+                                <p>4.出色的沟通表达能力，对设计和销售的热情较高。</p>
+                                <p>5.学习能力强，吃苦耐劳，能承受一定的压力。</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="grid_reveal" data-av-animation="self_slide_up">
-                    <div class="title">室内专案设计师</div>
-                    <div class="job_summary">
-                        <div class="title">任职要求</div>
-                        <div class="text">
-                            <p>1、室内设计、装饰、环艺、美术或相关专业毕业，同行业3年以上工作经验；</p>
-                            <p>2、对设计有高度热忱者，熟悉设计作业流程，样板房、售楼处、会所设计有丰富经验；</p>
-                            <p>3、能熟练操作运用AUTOCAD、3DMAX、PHOTOSHOP等相关软件；</p>
+                    </li>
+                    <li class="grid_reveal" data-av-animation="self_slide_up">
+                        <div class="title">室内专案设计师</div>
+                        <div class="job_summary">
+                            <div class="title">任职要求</div>
+                            <div class="text">
+                                <p>1、室内设计、装饰、环艺、美术或相关专业毕业，同行业3年以上工作经验；</p>
+                                <p>2、对设计有高度热忱者，熟悉设计作业流程，样板房、售楼处、会所设计有丰富经验；</p>
+                                <p>3、能熟练操作运用AUTOCAD、3DMAX、PHOTOSHOP等相关软件；</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="grid_reveal" data-av-animation="self_slide_up">
-                    <div class="title">室内方案设计师</div>
-                    <div class="job_summary">
-                        <div class="title">任职要求</div>
-                        <div class="text">
-                            <p>1、室内设计、美术或相关专业毕业，同行业工作经验3年以上；</p>
-                            <p>2、能熟练操作AutoCAD 、PowerPoint、Photoshop 等设计软件；</p>
-                            <p>3、具丰富的室内装饰设计经验，擅长创意方案，能独立完成设计方案（包括方案、施工图等）；</p>
-                            <p>4、熟悉装饰材料及施工工艺；</p>
+                    </li>
+                    <li class="grid_reveal" data-av-animation="self_slide_up">
+                        <div class="title">室内方案设计师</div>
+                        <div class="job_summary">
+                            <div class="title">任职要求</div>
+                            <div class="text">
+                                <p>1、室内设计、美术或相关专业毕业，同行业工作经验3年以上；</p>
+                                <p>2、能熟练操作AutoCAD 、PowerPoint、Photoshop 等设计软件；</p>
+                                <p>3、具丰富的室内装饰设计经验，擅长创意方案，能独立完成设计方案（包括方案、施工图等）；</p>
+                                <p>4、熟悉装饰材料及施工工艺；</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="grid_reveal" data-av-animation="self_slide_up">
-                    <div class="title">室内效果图设计师</div>
-                    <div class="job_summary">
-                        <div class="title">任职要求</div>
-                        <div class="text">
-                            <p>1、从事室内效果图绘制工作1年以上；</p>
-                            <p>2、熟练使用Photoshop、3DMAX、PowerPoint、sketchup、LISHTSCAPE为主，并熟悉AutoCAD绘图软件；</p>
-                            <p>3、能够用3D曲线建模并根据设计师要求制作异形家具模型。</p>
+                    </li>
+                    <li class="grid_reveal" data-av-animation="self_slide_up">
+                        <div class="title">室内效果图设计师</div>
+                        <div class="job_summary">
+                            <div class="title">任职要求</div>
+                            <div class="text">
+                                <p>1、从事室内效果图绘制工作1年以上；</p>
+                                <p>2、熟练使用Photoshop、3DMAX、PowerPoint、sketchup、LISHTSCAPE为主，并熟悉AutoCAD绘图软件；</p>
+                                <p>3、能够用3D曲线建模并根据设计师要求制作异形家具模型。</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="grid_reveal" data-av-animation="self_slide_up">
-                    <div class="title">室内设计师</div>
-                    <div class="job_summary">
-                        <div class="title">任职要求</div>
-                        <div class="text">
-                            <p>1、熟练掌握AutoCAD、3dsmax、Photoshop、sketchup等相关软件；</p>
-                            <p>2、从事施工图设计工作二年以上，熟悉装饰施工工序，施工工艺及节点构造，了解装饰材料特性，掌握出图规范，熟练绘制施工图，精通操作AUTO CAD。</p>
+                    </li>
+                    <li class="grid_reveal" data-av-animation="self_slide_up">
+                        <div class="title">室内设计师</div>
+                        <div class="job_summary">
+                            <div class="title">任职要求</div>
+                            <div class="text">
+                                <p>1、熟练掌握AutoCAD、3dsmax、Photoshop、sketchup等相关软件；</p>
+                                <p>2、从事施工图设计工作二年以上，熟悉装饰施工工序，施工工艺及节点构造，了解装饰材料特性，掌握出图规范，熟练绘制施工图，精通操作AUTO CAD。</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="grid_reveal" data-av-animation="self_slide_up">
-                    <div class="title">室内软装设计师</div>
-                    <div class="job_summary">
-                        <div class="title">任职要求</div>
-                        <div class="text">
-                            <p>1、有一定CAD基础，能看懂CAD图；</p>
-                            <p>2、熟练掌握OFFICE各种办公软件;</p>
-                            <p>3、具有很强的理解力、沟通能力、与优秀的表达能力。</p>
+                    </li>
+                    <li class="grid_reveal" data-av-animation="self_slide_up">
+                        <div class="title">室内软装设计师</div>
+                        <div class="job_summary">
+                            <div class="title">任职要求</div>
+                            <div class="text">
+                                <p>1、有一定CAD基础，能看懂CAD图；</p>
+                                <p>2、熟练掌握OFFICE各种办公软件;</p>
+                                <p>3、具有很强的理解力、沟通能力、与优秀的表达能力。</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="grid_reveal" data-av-animation="self_slide_up">
-                    <div class="title">设计师助理</div>
-                    <div class="job_summary">
-                        <div class="title">任职要求</div>
-                        <div class="text">
-                            <p>1、3年以上软装设计经验；</p>
-                            <p>2、熟悉布艺、饰品等软装饰材料;</p>
-                            <p>3、有较强的视觉搭配能力，能熟练操作AutoCAD 、PowerPoint、Photoshop 等软件；</p>
-                            <p>4、具有丰富的空间感和色彩感觉，并有较强的设计理念；</p>
-                            <p>5、有室内设计公司经验或有室内设计师经历转任软装设计尤佳。</p>
-                            <p>具有插花经验的优先。</p>
+                    </li>
+                    <li class="grid_reveal" data-av-animation="self_slide_up">
+                        <div class="title">设计师助理</div>
+                        <div class="job_summary">
+                            <div class="title">任职要求</div>
+                            <div class="text">
+                                <p>1、3年以上软装设计经验；</p>
+                                <p>2、熟悉布艺、饰品等软装饰材料;</p>
+                                <p>3、有较强的视觉搭配能力，能熟练操作AutoCAD 、PowerPoint、Photoshop 等软件；</p>
+                                <p>4、具有丰富的空间感和色彩感觉，并有较强的设计理念；</p>
+                                <p>5、有室内设计公司经验或有室内设计师经历转任软装设计尤佳。</p>
+                                <p>具有插花经验的优先。</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="grid_reveal" data-av-animation="self_slide_up">
-                    <div class="title">市场专员</div>
-                    <div class="job_summary">
-                        <div class="title">任职要求</div>
-                        <div class="text">
-                            <p>1、建筑或市场营销相关专业为佳；</p>
-                            <p>2、2年及以上建筑设计行业市场开拓经验优先;</p>
-                            <p>3、能力素质</p>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;具备敏锐的市场洞察力与强烈的市场开拓精神</p>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;具备良好的商务谈判技巧与沟通协调能力</p>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;具有良好的策划组织与关系建立能力</p>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;具备良好的突发事件解决能力和抗压能力</p>
+                    </li>
+                    <li class="grid_reveal" data-av-animation="self_slide_up">
+                        <div class="title">市场专员</div>
+                        <div class="job_summary">
+                            <div class="title">任职要求</div>
+                            <div class="text">
+                                <p>1、建筑或市场营销相关专业为佳；</p>
+                                <p>2、2年及以上建筑设计行业市场开拓经验优先;</p>
+                                <p>3、能力素质</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;具备敏锐的市场洞察力与强烈的市场开拓精神</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;具备良好的商务谈判技巧与沟通协调能力</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;具有良好的策划组织与关系建立能力</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;具备良好的突发事件解决能力和抗压能力</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="grid_reveal" data-av-animation="self_slide_up">
-                    <div class="title">品牌推广专员</div>
-                    <div class="job_summary">
-                        <div class="title">任职要求</div>
-                        <div class="text">
-                            <p>1、本科以上学历，2年以上相关工作经验；</p>
-                            <p>2、性格开朗，学习能力强，良好的沟通能力；</p>
-                            <p>3、具有较强的新闻敏感性，较强的文案功底，擅长信息搜集和整合，良好的策划思考能力，创意能力和观察能力，掌握一定的图片处理软件；</p>
+                    </li>
+                    <li class="grid_reveal" data-av-animation="self_slide_up">
+                        <div class="title">品牌推广专员</div>
+                        <div class="job_summary">
+                            <div class="title">任职要求</div>
+                            <div class="text">
+                                <p>1、本科以上学历，2年以上相关工作经验；</p>
+                                <p>2、性格开朗，学习能力强，良好的沟通能力；</p>
+                                <p>3、具有较强的新闻敏感性，较强的文案功底，擅长信息搜集和整合，良好的策划思考能力，创意能力和观察能力，掌握一定的图片处理软件；</p>
+                            </div>
                         </div>
+                    </li>
+                </ul>
+                <div id="how_to_get_job_container" class="grid_reveal" data-av-animation="self_slide_up">
+                    <div class="title">To apply | 应聘渠道</div>
+                    <div class="contacts">
+                        <p>E-mail | 官方邮箱</p>
+                        <p><a href="mailto:yushe1995@163.com">yushe1995@163.com</a></p>
                     </div>
-                </li>
-            </ul>
-            <div id="how_to_get_job_container" class="grid_reveal" data-av-animation="self_slide_up">
-                <div class="title">To apply | 应聘渠道</div>
-                <div class="contacts">
-                    <p>E-mail | 官方邮箱</p>
-                    <p><a href="mailto:yushe1995@163.com">yushe1995@163.com</a></p>
-                </div>
-                <div class="text">
-                    <p>工作地点：上海总公司、南昌分公司、九江分公司</p>
+                    <div class="text">
+                        <p>工作地点：上海总公司、南昌分公司、九江分公司</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- <div class="mobile_main_page_body mobile_block" id="mobile_join_container">
+        <!-- <div class="mobile_main_page_body mobile_block" id="mobile_join_container">
         <div class="mobile_main_body_container">
             <div class="title">join us | 加入我们</div>
             <div class="mobile_join_summary">
@@ -281,12 +246,17 @@
             </div>
         </div>
     </div> -->
-    <div id="Footer"></div>
+        <footer-box></footer-box>
+    </div>
     <script type="text/javascript" src="./content/script/aniview.js"></script>
     <script type="text/javascript" src="./content/script/fastclick.js"></script>
     <script type="text/javascript" src="./content/script/jquery.mousewheel.min.js"></script>
     <script style="text/javascript" src="./content/script/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="./content/script/common.js"></script>
+    <script type="text/javascript" src="./content/script/product.json.js"></script>
+    <script type="text/javascript" src="./content/script/Vue-v2.6.10.js"></script>
+    <script type="text/javascript" src="./content/script/lib/vue-components.js"></script>
+    <script type="text/javascript" src="./content/script/lib/vue-data.js"></script>
 </body>
 
 </html>
