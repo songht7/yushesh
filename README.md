@@ -1,7 +1,7 @@
 # yushesh
 御舍
-# babel es
+### babel es
 cd /content/script // npx babel dev -d lib
 
-# webpack
+### webpack
 cd /              // npm run build
