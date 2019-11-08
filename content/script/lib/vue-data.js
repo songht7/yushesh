@@ -57,10 +57,13 @@ new Vue({
         }, 1000);
       } else {
         setTimeout(() => {
-          $('.grid').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: 0
-          });
+          if ($('.grid').length) {
+            $('.grid').masonry({
+              itemSelector: '.grid-item',
+              columnWidth: 0
+            });
+          }
+
           $('.grid_reveal').AniView(options);
         }, 1000);
       }
