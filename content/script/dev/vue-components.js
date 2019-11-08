@@ -1,7 +1,3 @@
-Vue.component('top-head', {
-    template: '#top-head'
-})
-
 Vue.component('top-header', {
     props: {
         ctgList: {
