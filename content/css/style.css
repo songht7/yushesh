@@ -2,6 +2,7 @@
 /* CSS Document */
 .grid-item { width: 30%; padding-bottom: 15px}
 .grid-item--width2 { width: 50%; }
+.grid-item--width4 { width: 25%; }
 .grid-item--full { width: 100%;}
 .grid-item img{width: 95%;margin: 0 auto;display: block;}
 .grid-mobile .grid-item--width2,.grid-mobile .grid-item img{width: 100%}
@@ -40,7 +41,7 @@
 }
 .content_container .list_view ul li:first-child{margin-top:0;}
 
-
+.page-block{padding-bottom: 20px}
 .main_bone_container .page_text_container .title{font-size:29px;font-family:'itc_xlt',sans-serif;color:#303030;text-transform:uppercase;line-height:1.5;}
 .main_bone_container .page_text_container .text{line-height:1.6;margin-top:20px;}
 .main_bone_container .page_text_container .text .en{color:#959595;}
@@ -1513,6 +1514,8 @@ body.open .menu-main li a{
 .__text_box .__text_main_content.__text_main_content--up{top:0;text-align:left;}
 .__text_box .__text_main_content.__text_main_content--bottom{bottom:0;}
 .__text_box .__text_main_content.__text_main_content--bottom > p:first-child{font-size:20px;margin-bottom:7px;}
+
+.mobile-team-list .sub_title{padding: 10px 2%;font-size: 0.45rem}
 /*团队移动*/
 #mobile_main_team_body{width:100%;margin-top:.933rem;}
 #mobile_main_team_body .__mobile_team_item{margin-top:.96rem;}

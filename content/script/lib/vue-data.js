@@ -56,7 +56,13 @@ new Vue({
           $('.grid_reveal').AniView(options);
         }, 1000);
       } else {
-        $('.grid_reveal').AniView(options);
+        setTimeout(() => {
+          $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: 0
+          });
+          $('.grid_reveal').AniView(options);
+        }, 1000);
       }
 
       console.log(that.products);
