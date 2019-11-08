@@ -42,9 +42,11 @@
 
 
 .main_bone_container .page_text_container .title{font-size:29px;font-family:'itc_xlt',sans-serif;color:#303030;text-transform:uppercase;line-height:1.5;}
-.main_bone_container .page_text_container .text{line-height:1.6;margin-top:41px;}
+.main_bone_container .page_text_container .text{line-height:1.6;margin-top:20px;}
 .main_bone_container .page_text_container .text .en{color:#959595;}
 .main_bone_container .page_text_container .text .cn{color:#313131;}
+.page_text_container{padding-bottom: 20px}
+.main_bone_container .page_text_container .title.sub_title{font-size: 18px}
 
 #award_container{margin-top:70px;}
 #award_container .main_bone_container{width:1100px;margin:0 auto;}
@@ -1562,8 +1564,10 @@ body.open .menu-main li a{
 .mobile_block{display:none;}
 .mobile_main_page_body{width:100%;position:relative;padding-top:3.33rem;}
 .mobile_main_page_body .mobile_main_body_container{margin:0 .6rem;}
-.mobile_main_body_container > .title{font-size:.59rem;color:#303030;font-family:'itc_xlt',sans-serif;text-transform:uppercase;font-weight:bold;margin-top:.1rem;}
-.mobile_main_body_container > .text{font-size:.33rem;line-height:1.7;}
+.mobile_main_body_container > .title,.int-block-mobile > .title{font-size:.59rem;color:#303030;font-family:'itc_xlt',sans-serif;text-transform:uppercase;font-weight:bold;margin-top:.1rem;}
+.mobile_main_body_container > .text,.int-block-mobile > .text{font-size:.33rem;line-height:1.7;}
+.mobile_main_body_container > .title.sub_title,.int-block-mobile > .title.sub_title{font-size:.45rem;font-weight: 400}
+.int-block-mobile{padding-bottom: 0.5rem}
 /*联系我们*/
 #contact_container_mobile{}
 #contact_container_mobile .m_contact_nav{width:100%;display:flex;margin-top:.8rem;
