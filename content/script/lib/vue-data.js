@@ -1,10 +1,11 @@
 // npx babel dev -d lib
+import product from './product.json.js';
 new Vue({
   el: "#Wrapper",
   data: {
     id: "",
     ctg: "",
-    products: proList,
+    products: product.proList,
     detail: {}
   },
 

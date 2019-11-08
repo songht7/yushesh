@@ -8,7 +8,7 @@ module.exports = {
         ]
     },
     output: {
-        path: path.resolve(__dirname, './content/script/lib/'),
+        path: path.resolve(__dirname, './content/script/dis/'),
         filename: '[name].js'
     }
 };
