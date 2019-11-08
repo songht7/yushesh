@@ -1,15 +1,15 @@
 /*
-	{ "id": 1, "label": "办公空间" },
-	{ "id": 2, "label": "会所售楼处" },
-	{ "id": 3, "label": "酒店" },
-	{ "id": 4, "label": "商业空间" },
-	{ "id": 5, "label": "私宅样板房别墅" },
-	{ "id": 6, "label": "文博产业" }
+    { "id": 1, "label": "办公空间" },
+    { "id": 2, "label": "会所售楼处" },
+    { "id": 3, "label": "酒店" },
+    { "id": 4, "label": "商业空间" },
+    { "id": 5, "label": "私宅样板房别墅" },
+    { "id": 6, "label": "文博产业" }
 */
 var proList = [{
     "id": 13,
     "ctg": 1,
-    "ctgName":"办公空间",
+    "ctgName": "办公空间",
     "title": "上海谨道电商办公室",
     "design": "李宏升",
     "designCom": "御舍设计",
@@ -63,7 +63,7 @@ var proList = [{
 }, {
     "id": 14,
     "ctg": 2,
-    "ctgName":"会所售楼处",
+    "ctgName": "会所售楼处",
     "title": "芙蕖茶苑会所",
     "design": "李宏升",
     "designCom": "御舍设计",
@@ -110,7 +110,7 @@ var proList = [{
 }, {
     "id": 2,
     "ctg": 3,
-    "ctgName":"酒店",
+    "ctgName": "酒店",
     "title": "信华酒店",
     "design": "李宏升",
     "designCom": "御舍设计",
@@ -130,7 +130,7 @@ var proList = [{
 }, {
     "id": 15,
     "ctg": 3,
-    "ctgName":"酒店",
+    "ctgName": "酒店",
     "title": "建国龙吟日料餐厅",
     "design": "李宏升",
     "softDesign": "陈婷婷",
@@ -190,7 +190,7 @@ var proList = [{
 }, {
     "id": 16,
     "ctg": 3,
-    "ctgName":"酒店",
+    "ctgName": "酒店",
     "title": "上海隆江大酒店",
     "design": "李宏升",
     "softDesign": "赵晟  陈婷婷",
@@ -245,7 +245,7 @@ var proList = [{
 }, {
     "id": 17,
     "ctg": 3,
-    "ctgName":"酒店",
+    "ctgName": "酒店",
     "title": "濮院国贸酒店",
     "design": "李宏升",
     "designCom": "御舍设计",
@@ -289,11 +289,11 @@ var proList = [{
     "designConcept": "",
     "content": "",
     "dtlImgType": "full",
-    "dtlImgs": ["1.png","2.png", "3.png"]
+    "dtlImgs": ["1.png", "2.png", "3.png"]
 }, {
     "id": 18,
     "ctg": 3,
-    "ctgName":"酒店",
+    "ctgName": "酒店",
     "title": "山东福乐蒙酒店",
     "design": "李宏升",
     "designCom": "御舍设计",
@@ -342,11 +342,11 @@ var proList = [{
     "designConcept": "",
     "content": "",
     "dtlImgType": "full",
-    "dtlImgs": ["1.png","2.png", "3.png"]
+    "dtlImgs": ["1.png", "2.png", "3.png"]
 }, {
     "id": 19,
     "ctg": 3,
-    "ctgName":"酒店",
+    "ctgName": "酒店",
     "title": "上海敏帝豪酒店",
     "design": "李宏升",
     "designCom": "御舍设计",
@@ -366,7 +366,7 @@ var proList = [{
 }, {
     "id": 20,
     "ctg": 3,
-    "ctgName":"酒店",
+    "ctgName": "酒店",
     "title": "上海康桥精品酒店",
     "design": "李宏升",
     "designCom": "御舍设计",
@@ -410,5 +410,111 @@ var proList = [{
     "designConcept": "",
     "content": "",
     "dtlImgType": "full",
-    "dtlImgs": ["1.png","2.png", "3.png"]
+    "dtlImgs": ["1.png", "2.png", "3.png"]
+}, {
+    "id": 21,
+    "ctg": 3,
+    "ctgName": "酒店",
+    "title": "上海索菲特大酒店",
+    "design": "李宏升",
+    "designCom": "御舍设计",
+    "location": "中国上海",
+    "construction": "御舍（上海）建设工程有限公司",
+    "area": "25000㎡",
+    "txtPlace": 6,
+    "textRlign": "right",
+    "showType": "type_c",
+    "cover": [{
+        "url": "c1.jpg",
+        "size": "420x210",
+        "left": "0",
+        "top": "0"
+    }, {
+        "url": "c2.jpg",
+        "size": "420x440",
+        "left": "440",
+        "top": "0"
+    }, {
+        "url": "c3.jpg",
+        "size": "420x210",
+        "left": "880",
+        "top": "0"
+    }, {
+        "url": "c4.jpg",
+        "size": "420x210",
+        "left": "0",
+        "top": "230"
+    }, {
+        "url": "c5.jpg",
+        "size": "420x210",
+        "left": "880",
+        "top": "230"
+    }, {
+        "url": "c6.jpg",
+        "size": "420x210",
+        "left": "0",
+        "top": "460"
+    }, {
+        "url": "c7.jpg",
+        "size": "860x210",
+        "left": "440",
+        "top": "460"
+    }],
+    "designConcept": "",
+    "content": "",
+    "dtlImgType": "full",
+    "dtlImgs": ["1.png", "2.png", "3.png", "4.png"]
+}, {
+    "id": 22,
+    "ctg": 3,
+    "ctgName": "酒店",
+    "title": "新安江温泉酒店",
+    "design": "李宏升 / 黃東奎",
+    "designCom": "御舍设计",
+    "location": "浙江杭州",
+    "construction": "稼禾（上海）建设工程有限公司",
+    "area": "10000㎡",
+    "txtPlace": 6,
+    "textRlign": "right",
+    "showType": "type_a",
+    "cover": [{
+        "url": "c1.jpg",
+        "size": "860x210",
+        "left": "0",
+        "top": "0"
+    }, {
+        "url": "c2.jpg",
+        "size": "420x210",
+        "left": "880",
+        "top": "0"
+    }, {
+        "url": "c3.jpg",
+        "size": "420x440",
+        "left": "0",
+        "top": "230"
+    }, {
+        "url": "c4.jpg",
+        "size": "420x440",
+        "left": "440",
+        "top": "230"
+    }, {
+        "url": "c5.jpg",
+        "size": "420x440",
+        "left": "880",
+        "top": "230"
+    }, {
+        "url": "c6.jpg",
+        "size": "860x210",
+        "left": "0",
+        "top": "690"
+    }, {
+        "url": "c7.jpg",
+        "size": "420x210",
+        "left": "880",
+        "top": "690"
+    }],
+    "designConcept": "",
+    "content": "",
+    "dtlImgType": "full",
+    "dtlImgs": ["1.png", "2.png", "3.png"]
 }];
