@@ -915,5 +915,23 @@ module.exports = {
     "content": "",
     "dtlImgType": "",
     "dtlImgs": ["1.png", "2.png", "3.png", "4.png"]
+  }, {
+    "id": 32,
+    "ctg": 5,
+    "ctgName": "私宅样板房别墅",
+    "title": "浙江余姚私宅",
+    "design": "李宏升",
+    "designCom": "御舍设计",
+    "location": "浙江余姚",
+    "construction": "御舍（上海）建设工程有限公司",
+    "area": "150㎡",
+    "txtPlace": 1,
+    "textRlign": "right",
+    "showType": "single",
+    "cover": "c1.jpg",
+    "designConcept": "",
+    "content": "",
+    "dtlImgType": "full",
+    "dtlImgs": ["1.png", "2.png"]
   }]
 };
