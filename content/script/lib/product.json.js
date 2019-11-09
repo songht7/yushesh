@@ -518,5 +518,58 @@ module.exports = {
     "content": "",
     "dtlImgType": "full",
     "dtlImgs": ["1.png", "2.png", "3.png"]
+  }, {
+    "id": 23,
+    "ctg": 4,
+    "ctgName": "商业空间",
+    "title": "云南贡润祥茶楼",
+    "design": "李宏升",
+    "designCom": "御舍设计",
+    "location": "云南昆明",
+    "construction": "御舍（上海）建设工程有限公司",
+    "area": "600㎡",
+    "txtPlace": 7,
+    "textRlign": "right",
+    "showType": "type_a",
+    "cover": [{
+      "url": "c1.jpg",
+      "size": "860x210",
+      "left": "0",
+      "top": "0"
+    }, {
+      "url": "c2.jpg",
+      "size": "420x210",
+      "left": "880",
+      "top": "0"
+    }, {
+      "url": "c3.jpg",
+      "size": "420x210",
+      "left": "0",
+      "top": "230"
+    }, {
+      "url": "c4.jpg",
+      "size": "420x210",
+      "left": "0",
+      "top": "460"
+    }, {
+      "url": "c5.jpg",
+      "size": "860x440",
+      "left": "440",
+      "top": "230"
+    }, {
+      "url": "c6.jpg",
+      "size": "420x210",
+      "left": "0",
+      "top": "690"
+    }, {
+      "url": "c7.jpg",
+      "size": "860x210",
+      "left": "440",
+      "top": "690"
+    }],
+    "designConcept": "",
+    "content": "<div style='line-height:1.4;width:50%;margin:0 auto; display:flex;justify-content: center;flex-direction:column;align-content: center;align-items: center;'><p><b>溯源，寻味汉韵，茶楼新境</b></p><p>情感如一盏茶汤。</p><p>有茶的恬淡温暖，有俗世的超脱自得。</p><p>得闲相依， 手握杯盏， 聊平淡家常。</p><p>在如此佳境相饮， 相视心明， 日子越发淡定丰盈 </p><br/><br/><p><b>坐标：云南</b></p><p>项目位于云南昆明，一个温度适宜四季如春的旅游胜地。 本案在茶楼中融合多种新鲜元素使主题丰富多元， 体验直观立体， 细节蔓延亮点， 让你舍不得遗漏每一个眼前的精致。</p><br/><br/><p><b>项目：茶楼</b></p><p>茶楼软装项目， 通过传统茶文化融合创意元素， 碰撞摩擦， 酿造出别致韵味的茶楼设计， 同时也展现了设计师对传统茶艺的情怀及个性的灵动， 并从体验度中把控每一个细节。</p><br/> <br/><p>感恩一杯佳茗，</p><p>感恩一段时光，</p><p>感恩一次邂逅，</p><p>感恩一处佳境，</p><p>感恩您的鉴赏。</p>",
+    "dtlImgType": "",
+    "dtlImgs": ["1.png", "2.png", "2.JPG", "3.png", "3.jpg", "4.png", "5.png", "6.png", "7.png"]
   }]
 };

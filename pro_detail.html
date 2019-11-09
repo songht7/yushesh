@@ -78,6 +78,11 @@
                     <p>{{detail.designConcept}}</p>
                     <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
                 </template>
+                <template v-if="detail.content">
+                    <div v-html="detail.content"></div>
+                    <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
+                </template>
+                <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
                 <div :class="[detail.dtlImgType?'grid-full':'grid']">
                     <template v-for="img,k in detail.dtlImgs" :key="k">
                         <div :class="['grid-item',detail.dtlImgType?'grid-item--full':'grid-item--width2','grid_reveal']" data-av-animation="self_slide_up"><img :src='"./content/product/pro_"+detail.id+"/"+img' style="" title="" /></div>
@@ -86,11 +91,6 @@
             </div>
         </div>
         <div class="mobile_main_page_body mobile_block" id="detail_container_mobile">
-            <template v-if="detail.designConcept">
-                <p><span style="color: rgb(48, 48, 48);">设计概念</p>
-                <p>{{detail.designConcept}}</p>
-                <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
-            </template>
             <div class="mobile_main_body_container">
                 <div class="mobile_project_info">
                     <p class="deep_gray">项目名称 | {{detail.title}}</p>
@@ -98,7 +98,17 @@
                     <p class="deep_gray">项目地点 | {{detail.location}}</p>
                     <p class="deep_gray">施工单位 | {{detail.construction}}</p>
                     <p class="deep_gray" v-if="detail.area">建筑面积 | {{detail.area}}</p>
+                    <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
                 </div>
+                <template v-if="detail.designConcept">
+                    <p><span style="color: rgb(48, 48, 48);">设计概念</p>
+                    <p>{{detail.designConcept}}</p>
+                    <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
+                </template>
+                <template v-if="detail.content">
+                    <div v-html="detail.content"></div>
+                    <p style="padding:0 0 15px"><span style="color: rgb(48, 48, 48);"></span></p>
+                </template>
                 <div class="moble_project_detail" id="mobile_detail_container">
                     <div class="detail_inner_container" id="pc_detail_container">
                         <div class="grid-mobile">
@@ -127,10 +137,8 @@
     <script type="text/javascript" src="./content/script/jquery.mousewheel.min.js"></script>
     <script style="text/javascript" src="./content/script/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="./content/script/common.js"></script>
-    <script type="text/javascript" src="./content/script/product.json.js"></script>
     <script type="text/javascript" src="./content/script/Vue-v2.6.10.js"></script>
-    <script type="text/javascript" src="./content/script/lib/vue-components.js"></script>
-    <script type="text/javascript" src="./content/script/lib/vue-data.js"></script>
+    <script type="text/javascript" src="./content/script/dis/bundle.js"></script>
 </body>
 
 </html>
