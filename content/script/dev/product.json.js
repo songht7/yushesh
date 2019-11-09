@@ -652,5 +652,23 @@ module.exports = {
         "content": "<div><p>摄影：李迪</p><br/><p>主要材料：柚木、壁布、复古砖、铝板、大理石</p><p style='test-algin:center;line-heihgt:2'><strong>与斑鱼来场抵死缠绵</strong></p><p>以水洗尽，以特殊刀工切薄如纸，将剔透的鱼肉煮熟，涮上酱汁，美味可想而知。</p><p>斑鱼火锅一直以来是以水傍乡的丽江特色之一，而这次要打破传统将原本带有地域性色彩的饮食文化融入时尚之都上海；又以新的面貌呈现在广大的消费者面前，这个是业主方和我们设计团队共同的课题。本土与国际化的揉捏交融，传统与时尚碰撞出了不一样的味道。</p></div>",
         "dtlImgType": "",
         "dtlImgs": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg", "14.jpg", "15.jpg", "16.jpg"]
+    }, {
+        "id": 26,
+        "ctg": 4,
+        "ctgName": "商业空间",
+        "title": "ZE5酒吧上海店",
+        "design": "李宏升",
+        "designCom": "御舍设计",
+        "location": "中国上海",
+        "construction": "御舍（上海）建设工程有限公司",
+        "area": "250㎡",
+        "txtPlace": 4,
+        "textRlign": "right",
+        "showType": "single",
+        "cover": "c1.jpg",
+        "designConcept": "",
+        "content": "",
+        "dtlImgType": "full",
+        "dtlImgs": ["1.png", "2.png"]
     }]
 };
