@@ -30,13 +30,13 @@ Vue.component('top-header', {
                     <div class="nmbHover">
                         <div class="top_logo" onClick="window.location.href='index.html'"><img src="./content/images/logo.png" alt="" /></div>
                         <ul class="sub_nav">
+                            <li><a href="index.html"><span>简介</span></a></li>
                             <li>
-                                <a href="index.html"><span>作品</span></a>
+                                <a href="works.html"><span>作品</span></a>
                                 <ul class="nav_sub">
-                                    <li v-for="c,i in ctgList" :key="i"><a :href='"index.html?ctg="+c.id'><span>{{c.label}}</span></a></li>
+                                    <li v-for="c,i in ctgList" :key="i"><a :href='"works.html?ctg="+c.id'><span>{{c.label}}</span></a></li>
                                 </ul>
                             </li>
-                            <li><a href="introduction.html"><span>简介</span></a></li>
                             <li><a href="job.html"><span>招聘</span></a></li>
                             <li><a href="contact.html"><span>联系我们</span></a></li>
                         </ul>
@@ -47,12 +47,12 @@ Vue.component('top-header', {
                         <div class="top_logo" onClick="window.location.href='index.html'"></div>
                         <ul class="sub_nav">
                             <li>
-                                <a href="index.html"><span>作品</span></a>
-                                <ul class="nav_sub">
-                                    <li v-for="c,k in ctgList" :key="k"><a :href='"index.html?ctg="+c.id'><span>{{c.label}}</span></a></li>
-                                </ul>
+                                <a href="index.html"><span>简介</span></a>
                             </li>
-                            <li><a href="introduction.html"><span>简介</span></a></li>
+                            <li><a href="works.html"><span>作品</span></a>
+                                <ul class="nav_sub">
+                                    <li v-for="c,k in ctgList" :key="k"><a :href='"works.html?ctg="+c.id'><span>{{c.label}}</span></a></li>
+                                </ul></li>
                             <li><a href="job.html"><span>招聘</span></a></li>
                             <li><a href="contact.html"><span>联系我们</span></a></li>
                         </ul>
@@ -69,13 +69,13 @@ Vue.component('top-header', {
                         <div class="sub_nav_list" id="sub_nav_list">
                             <div class="mobile_top_logo"></div>
                             <ul>
+                                <li class="tri_delay_2"><a href="index.html">简介</a></li>
                                 <li class="tri_delay_1">
-                                    <a href="index.html">作品</a>
+                                    <a href="works.html">作品</a>
                                     <ul class="nav_sub_m">
-                                        <li v-for="c,l in ctgList" :key="l"><a :href='"index.html?ctg="+c.id'><span>{{c.label}}</span></a></li>
+                                        <li v-for="c,l in ctgList" :key="l"><a :href='"works.html?ctg="+c.id'><span>{{c.label}}</span></a></li>
                                     </ul>
                                 </li>
-                                <li class="tri_delay_2"><a href="introduction.html">简介</a></li>
                                 <li class="tri_delay_4"><a href="job.html">招聘</a></li>
                                 <li class="tri_delay_3"><a href="contact.html">联系我们</a></li>
                             </ul>
