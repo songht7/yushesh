@@ -110,7 +110,7 @@
         align-items: center;}
 .address-block{
     padding: 0 10px;
-    /*width: 35%;*/
+    width: 25%;
     line-height: 1.6
 }
 /*.address-block:first-child{margin-left: 165px}*/
