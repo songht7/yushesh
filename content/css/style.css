@@ -101,20 +101,22 @@
         align-items: center;}
 .contact-address{
     padding-bottom: 30px;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction:row;
         align-content: center;
         align-items: center;}
 .address-block{
     padding: 0 10px;
-    width: 40%;
+    width: 35%;
     line-height: 1.6
 }
-.address-block:first-child{margin-left: 110px}
-.adr-name{font-size: 16px;color: #000}
+.address-block:first-child{margin-left: 165px}
+.adr-name{font-size: 16px;color: #000;padding-bottom: 10px}
+.adr-row{padding-bottom: 2px}
+.adr-row span{color: #666}
 .map{display: block;width: 100%}
 
 .mobile_main_body_container .contact-top .title{font-size: .59rem;padding-bottom: 5px}
